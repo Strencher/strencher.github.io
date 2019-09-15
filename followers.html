@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head id="background">
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<title class="title">Followers</title>
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
+</head>
+<body bgcolor=#262626 >
+<h2 style="color:#6441a5; text-decoration:underline" class="viewercard">Twitch Followers List</h2>
+<form action="index.html">
+<input type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
+<p id="demo"></p>
+<c id="demo2"></c>
+</form>
+
+<script>
+j = urllib2.urlopen('http://tmi.twitch.tv/group/user/strencher_/chatters')
+j_obj = json.load(j)
+u=j_obj['chatters']['viewers']
+for x in u:
+    print x
+</script>
+</body>
+</html>
