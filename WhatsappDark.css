@@ -1,0 +1,114 @@
+:root {
+    --black1: #222222;
+    --black2: #1a1919;
+    --black3: #1B1B1B;
+    --black4: #252525;
+    --white1: rgb(219,219,219);
+}
+/*Chatslist*/
+html[dir] ._2UaNq {
+    background-color: var(--black1);
+}
+html[dir] ._2UaNq:hover {
+    background-color: var(--black2);
+}
+html[dir] ._2UaNq._3mMX1 {
+    background-color: var(--black4);
+}
+/*Textarea*/
+html[dir=ltr] ._2i7Ej,
+html[dir] ._13mgZ 
+/*textarea blackground + textarea*/
+{
+    background-color: var(--black1);
+}
+/*Overlay*/
+html[dir] ._3fs0K {
+    background-color: var(--black2);
+}
+html[dir] ._3Jvyf {
+    background-color: var(--black1);
+}
+html[dir] ._1sFYw {
+    display: none;
+}
+html[dir] .ZP8RM,
+._1KDYa {
+    background-color: var(--black1);
+}
+html[dir] .eiCXe,
+._2zCfw 
+/*Beides*/
+{
+    background-color: var(--black2);
+}
+html[dir] ._1_keJ {
+    background-color: var(--black3);
+}
+html[dir] ._1RYPC {
+    background-color: var(--black1);
+}
+html[dir] ._2UaNq._3mMX1 ._2WP9Q {
+    border-top-color: black;
+}
+html[dir] ._2hHc6 {
+    color: white !important;
+    background-color: var(--black2) !important;
+}
+html[dir] ._3cfBY:hover {
+    background-color: var(--black3);
+}
+html[dir] .Sl-9e,
+._19RFN {
+    color: white;
+}
+html[dir] ._26JG5,
+.rK2ei,
+._26JG5+._26JG5 ._27Ie2 {
+    background-color: var(--black3);
+    border-top-color: #000000;
+}
+html[dir] ._26JG5:hover {
+    background-color: var(--black2);
+}
+html[dir] .lz4Mo,
+._6xQdq {
+    color: white;
+}
+html[dir] ._1w-mX {
+    background-color: var(--black2);
+}
+html[dir] .r7sRK {
+    background-color: var(--black3);
+}
+html[dir] ._2LSbZ {
+    background-color: var(--black);
+}
+html[dir=ltr] ._3FeAD {
+    color: white;
+}
+html[dir] .app-wrapper-web  {
+    background-color: var(---black);
+}
+html[dir] .iFKgT {
+    background-color: var(--black1) !important;
+}
+html[dir] ._1wSzK {
+    background-image: url(https://images.vexels.com/media/users/3/137120/isolated/preview/fd388b1e4eb35b47ab7a1c2d29dca9c8-wlan-symbol-by-vexels.png);
+    fill: blue;
+}
+#startup {
+    background-color: var(--black2);
+}
+#app {
+    background-color: var(--black1);
+}
+._0LqQ {
+    color: var(--white);
+}
+html[dir] .ZP8RM._19OGD {
+    background-color: var(--black1);
+}
+._1cDWi {
+    color: white;
+}
