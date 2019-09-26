@@ -1,0 +1,25 @@
+:root {
+    --lila: #9147ff;
+    --lila2: #772ce8;
+    --black: #1a1919;
+    --black2: #222222;
+    --black3: #252525;
+}
+
+.tw-animation--timing-ease-in {
+    display: none;
+}
+.tw-root--hover .tw-core-button--secondary:hover:not(.tw-core-button--disabled) {
+    background-color: var(--lila) !important;
+}
+body {
+    background-color: var(--black) !important;
+}
+.tw-input {
+    border-top-left-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+}
+.tw-core-button--secondary.tw-core-button--disabled {
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+}
