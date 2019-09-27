@@ -4,6 +4,7 @@
     --black: #1a1919;
     --black2: #222222;
     --black3: #252525;
+    --black4: #101010;
 }
 
 .tw-animation--timing-ease-in {
@@ -22,4 +23,8 @@ body {
 .tw-core-button--secondary.tw-core-button--disabled {
     border-top-right-radius: 25px !important;
     border-bottom-right-radius: 25px !important;
+}
+
+.tw-c-text-base {
+    background-color: var(--black4) !important;
 }
