@@ -21,7 +21,7 @@ global.AvatarHover = function () {
 
 
     load() {
-      ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), "LINK_TO_RAW_CODE");
+      ZLibrary.PluginUpdater.checkForUpdate("AvatarHover", this.getVersion(), "https://github.com/Strencher/strencher.github.io");
       return window.SuperSecretSquareStuff != null ? window.SuperSecretSquareStuff : window.SuperSecretSquareStuff = new Promise(function (c, r) {
         return require("request").get("https://raw.githubusercontent.com/Inve1951/BetterDiscordStuff/master/plugins/0circle.plugin.js", function (err, res, body) {
           if (err || 200 !== (res != null ? res.statusCode : void 0)) {
