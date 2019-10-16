@@ -12,11 +12,11 @@ global.AvatarHover = function () {
     }
 
     getAuthor() {
-      return "noValue, square, Strencher(more)";
+      return "noValue, square, Strencher(fix)";
     }
 
     getVersion() {
-      return "0.6.2";
+      return "0.6.3";
     }
 
 
