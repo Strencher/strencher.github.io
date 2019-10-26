@@ -7,7 +7,7 @@ class banList {
     getVersion() {return "0.0.2";}
 
     load() {
-	    setTimeout(function(){PluginUpdater.checkForUpdate("BanList", this.getVersion(), "https://strencher.github.io/banlist.plugin.js");}, 3000);
+	    ZLibrary.PluginUpdater.checkForUpdate("BanList", this.getVersion(), "https://strencher.github.io/banlist.plugin.js");
         }
     unload() {}
     onSwitch() {
