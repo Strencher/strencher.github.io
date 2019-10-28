@@ -4,7 +4,7 @@ class banList {
     getName() {return "BanList";}
     getAuthor() {return "Strencher";}
     getDescription() {return "Hilft dir leute in die #gebannte-viewer einzutragen";}
-    getVersion() {return "0.0.2";}
+    getVersion() {return "0.0.3";}
 
     load() {
 	    ZLibrary.PluginUpdater.checkForUpdate("BanList", this.getVersion(), "https://strencher.github.io/banlist.plugin.js");
@@ -45,14 +45,14 @@ class banList {
         buttonInner.setAttribute("style", "background-color: transparent !important;");
         button.setAttribute("style", "background-color: transparent !important;");
         buttonInner.setAttribute("style", "margin-left: 2px !important;");
-        Icon.setAttribute("style", "filter: scale(0) !important;");
+        Icon.setAttribute("style", "transform: scale(0) !important;");
         Icon.setAttribute("width", "22");
 		Icon.setAttribute("height", "22");
         Icon.onmouseover = () => {
-            Icon.setAttribute("style", "filter: scale(1) !important;");
+            Icon.setAttribute("style", "transform: scale(1) !important;");
           }
           Icon.onmouseout = () => {
-            Icon.setAttribute("style", "filter: scale(0) !important;");
+            Icon.setAttribute("style", "transform: scale(0) !important;");
           }
         Icon.setAttribute("src", "https://cdn.discordapp.com/emojis/494828959532449802.png?v=1");
         button.onclick = () => {
