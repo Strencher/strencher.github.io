@@ -7,7 +7,7 @@ class cssPreview {
 
 
     load() {
-        ZLibrary.PluginUpdater.checkForUpdate("CssCodePrewiew", this.getVersion(), "https://github.com/Strencher/strencher.github.io/cssPluign.js");
+        ZLibrary.PluginUpdater.checkForUpdate("CssCodePrewiew", this.getVersion(), "https://github.com/Strencher/strencher.github.io/cssPluign.plugin.js");
 
     }
     unload() {}
