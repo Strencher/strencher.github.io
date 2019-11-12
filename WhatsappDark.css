@@ -7,79 +7,79 @@
 }
 /*Chatslist*/
 html[dir] ._2UaNq {
-    background-color: var(--black1);
+    background-color: var(--black1) !important;
 }
 html[dir] ._2UaNq:hover {
-    background-color: var(--black2);
+    background-color: var(--black2)!important;
 }
 html[dir] ._2UaNq._3mMX1 {
-    background-color: var(--black4);
+    background-color: var(--black4)!important;
 }
 /*Textarea*/
 html[dir=ltr] ._2i7Ej,
 html[dir] ._13mgZ 
 /*textarea blackground + textarea*/
 {
-    background-color: var(--black1);
+    background-color: var(--black1)!important;
 }
 /*Overlay*/
 html[dir] ._3fs0K {
-    background-color: var(--black2);
+    background-color: var(--black2)!important;
 }
 html[dir] ._3Jvyf {
-    background-color: var(--black1);
+    background-color: var(--black1) !important;
 }
 html[dir] ._1sFYw {
     display: none;
 }
 html[dir] .ZP8RM,
 ._1KDYa {
-    background-color: var(--black1);
+    background-color: var(--black1) !important;
 }
 html[dir] .eiCXe,
 ._2zCfw 
 /*Beides*/
 {
-    background-color: var(--black2);
+    background-color: var(--black2) !important;
 }
 html[dir] ._1_keJ {
-    background-color: var(--black3);
+    background-color: var(--black3)!important;
 }
 html[dir] ._1RYPC {
-    background-color: var(--black1);
+    background-color: var(--black1)!important;
 }
 html[dir] ._2UaNq._3mMX1 ._2WP9Q {
-    border-top-color: black;
+    border-top-color: black !important
 }
 html[dir] ._2hHc6 {
     color: white !important;
     background-color: var(--black2) !important;
 }
 html[dir] ._3cfBY:hover {
-    background-color: var(--black3);
+    background-color: var(--black3) !important;
 }
 html[dir] .Sl-9e,
 ._19RFN {
-    color: white;
+    color: white !important;
 }
 html[dir] ._26JG5,
 .rK2ei,
 ._26JG5+._26JG5 ._27Ie2 {
-    background-color: var(--black3);
-    border-top-color: #000000;
+    background-color: var(--black3) !important;
+    border-top-color: #000000 !important;
 }
 html[dir] ._26JG5:hover {
-    background-color: var(--black2);
+    background-color: var(--black2) !important;
 }
 html[dir] .lz4Mo,
 ._6xQdq {
-    color: white;
+    color: white !important;
 }
 html[dir] ._1w-mX {
-    background-color: var(--black2);
+    background-color: var(--black2) !important;
 }
 html[dir] .r7sRK {
-    background-color: var(--black3);
+    background-color: var(--black3) !important;
 }
 html[dir] ._2LSbZ {
     background-color: var(--black);
@@ -94,39 +94,39 @@ html[dir] .iFKgT {
     background-color: var(--black1) !important;
 }
 html[dir] ._1wSzK {
-    background-image: url(https://images.vexels.com/media/users/3/137120/isolated/preview/fd388b1e4eb35b47ab7a1c2d29dca9c8-wlan-symbol-by-vexels.png);
-    fill: blue;
+    background-image: url(https://images.vexels.com/media/users/3/137120/isolated/preview/fd388b1e4eb35b47ab7a1c2d29dca9c8-wlan-symbol-by-vexels.png) !important;
+    fill: blue !important;
 }
 #startup {
-    background-color: var(--black2);
+    background-color: var(--black2) !important;
 }
 #app {
-    background-color: var(--black1);
+    background-color: var(--black1) !important;
 }
 ._0LqQ {
-    color: var(--white);
+    color: var(--white) !important;
 }
 html[dir] .ZP8RM._19OGD {
-    background-color: var(--black1);
+    background-color: var(--black1) !important;
 }
 ._1cDWi {
-    color: white;
+    color: white !important;
 }
 html[dir] .cGLoy {
-    background-color: var(--black1);
+    background-color: var(--black1) !important;
 }
 html[dir] ._1HjMu {
-    background-color: var(--black3);
+    background-color: var(--black3) !important;
 }
 html[dir] .VIAHn {
-    background-color: var(--black2);
+    background-color: var(--black2) !important;
 }
 html[dir] ._3yth3 {
-    background-color: black;
+    background-color: black !important;
 }
 html[dir] ._3RiLE {
-    background-color: var(--black1);
+    background-color: var(--black1) !important;
 }
 html[dir] .kiodY {
-    background-color: var(--black2);
+    background-color: var(--black2) !important;
 }
