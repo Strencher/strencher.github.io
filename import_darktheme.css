@@ -380,7 +380,7 @@ a {
   border-color: #bbbbbb var(--Important);
   color: #bbbbbb var(--Important);
 }
-.directionColumn-35P_nr[style="flex: 1 1 auto;"] {
+.directionColumn-35P_nr[style="flex: 1 1 auto;"]:not(.videoInner-3OR9J2) {
   background-color: #222222 var(--Important);
 }
 .themeDark-3Ap_7i .image-3zK3Wt {
