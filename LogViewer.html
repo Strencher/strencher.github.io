@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-<title class="title">LogViewer</title>
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title class="title">LogViewer</title>
+    <style>
+    .hoverStyle:hover  {
+         cursor: pointer;
+         transform: scale(1.1);
+     
+        } 
+    
+    
+    
+    </style>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
 </head>
-<body bgcolor=#262626>
-<form action="index.html">
-<input type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
-</form>
-<input style="border-radius: 20px; background-color: transparent; border-color: black; font-size: 20px;" type="text" id="namen">
-<input style="border-radius: 20px; background-color:#6441a5; font-size: 20px; border-color: transparent;" type="button" id="openuser" value="Öffne LogViewer von ShoXx">
-<script>
-document.getElementById('openuser').addEventListener('click',function(){
-usernamen=document.getElementById('namen').value;
-window.open('https://cbenni.com/ShoXx__?user='+usernamen+'');
-});
-</script>
+
+<body bgcolor=#1a1919>
+    <form action="index.html">
+        <input class="hoverStyle" type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
+    </input>
+    </form>
+    <input style="border-radius: 20px; background-color: transparent; border-color: black; font-size: 20px; color: white;" type="text"
+        id="namen" placeholder="Kanalname:">
+    <input style="border-radius: 20px; background-color:#6441a5; font-size: 20px; border-color: transparent;"
+        type="button" id="openuser" class="hoverStyle" value="Öffne LogViewer von ShoXx">
+    </input>
+    <script>
+        document.getElementById('openuser').addEventListener('click', function () {
+            let usernamen = document.getElementById('namen').value;
+            window.open(`https://cbenni.com/ShoXx__?user=${usernamen}`);
+        });
+    </script>
 </body>
+
 </html>

@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-<title class="title">Chat+Player</title>
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png"></link>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .hoverStyle:hover  {
+         cursor: pointer;
+         transform: scale(1.1);
+     }
+    
+    
+    </style>
+    <title class="title">Chat</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
+    </link>
 </head>
+
 <body bgcolor="#262626">
-<form action="index.html">
-<input type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
-</form>
-<div id="twitch-embed"></div>
-<script src="https://embed.twitch.tv/embed/v1.js"></script>
-<script type="text/javascript">
-new Twitch.Embed("twitch-embed", {
-width: 900,
-height: 900,
-channel: "ShoXx__",
-autoplay: false,
-theme: "dark",
-});
-</script>
+    <form action="index.html">
+        <input class="hoverStyle" type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
+    </form>
+    <iframe style="margin-top: 25px;" frameborder="0" scrolling="no" id="chat_embed" class="removeTwitchChat"
+        src="https://www.twitch.tv/embed/ShoXx__/chat?darkpopout" height="700" width="850">
+    </iframe>
+
 </html>

@@ -1,35 +1,80 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html lang="de">
 <head>
-<link rel="stylesheet" href="style.css" type="text/css">
-<title id="title-index">TwitchTools</title>
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
-<meta charset= "utf-8">
+    <style>
+     .hoverStyle:hover  {
+         cursor: pointer;
+         transform: scale(1.1);
+     }
+     .ViewerCard {
+        margin-top: 12px;
+     }
+     .TwitchChat {
+         margin-top: 12px;
+     }
+     .home {
+         margin-top: 20px;
+     }
+     .title {
+         color: white;
+         font-size: 20px;
+         text-decoration: underline;
+         display: block;
+         margin-left: 40%;
+         margin-right: 40%;
+     }
+     .buttons {
+         margin-left: 10px;
+         width: 150px;
+         height: 150px;
+     }   
+     </style>
+     <script>
+    document.getElementsByClassName("LogViewer").onclick = function (eve) {
+        window.open("./LogViewer.html");
+    }
+    document.getElementsByClassName("ViewerCard").onclick = function (eve) {
+        window.open("./Viewercard.html");
+    }
+    document.getElementsByClassName("TwitchChat").onclick = function (eve) {
+        window.open("./twitchchat.html");
+    }
+    document.getElementsByClassName("home").onclick = function (eve) {
+        window.open("./index.html");
+    }
+     
+     
+     
+     
+     </script>
+    <title id="title-index">TwitchTools</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
+    <meta charset="utf-8">
 </head>
-<body bgcolor="#262626">
-<div id="aaaa">
-<nav>
-<ul>
-</ul>
-</nav>
-<section>
-<div>
-<a class="hoverStyle" style="margin-left: 400px; text-decoration: underline; color: #6441a5; font-size:20px;" id="test">Das sind TwitchModarator Tools für ShoXx seine moderatoren.</a>
-<form action="index.html">
-<input class="hoverStyle" type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
-</form>
-<form action="LogViewer.html">
-<input class="hoverStyle" style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;" type="submit" value="LogViewer">
-</form>
-<form action="Viewercard.html">
-<input class="hoverStyle" style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;" type="submit" value="ViewerCard">
-</form>
-<form action="twitchchat.html">
-<input class="hoverStyle" style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;" type="submit" value="TwitchChat">
-</form>
-</div>
-<footer>
-</footer>
-</div>
+<body style="background-color: #1a1919">
+        <title class="title">Das Sind Twitch Tools</title>
+
+    <form action="index.html">
+        <button style="background-color: transparent; border-color: transparent;" class="home">
+            <img style="background-color: transparent;" class="hoverStyle home" type="image"
+                src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
+            </img>
+        </button>
+            </form>
+            <form action="LogViewer.html">
+                    <input class="hoverStyle LogViewer buttons"
+                        style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
+                        type="submit" value="LogViewer 🔎">
+            </input>
+            </form>
+             <form action="Viewercard.html">
+                    <input class="hoverStyle ViewerCard buttons"
+                        style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
+                        type="submit" value="ViewerCard 🔎">
+            </form>
+            <form action="twitchchat.html">
+                    <input class="hoverStyle TwitchChat buttons"
+                        style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
+                        type="submit" value="TwitchChat">
+            </input>
+                </form>
 </body>
-</html>
