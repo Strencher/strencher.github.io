@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head id="background">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .hoverStyle:hover  {
+         cursor: pointer;
+         transform: scale(1.1);
+     }
+    
+    
+    </style>
+    <title class="title">Username Changes</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
+</head>
+
+<body bgcolor=#262626>
+    <h2 style="color:#6441a5; text-decoration:underline" class="viewercard">Twitch UsernameChanelog</h2>
+    <form action="index.html">
+        <input class="hoverStyle" type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
+    </form>
+    <input
+        style="border-color:black; background-color: transparent; cursor:text; color:white; border-radius: 20px; font-size: 20px;"
+        placeholder="UserID:" type="text" id="namen">
+    <input
+        style="color:white; background-color:#6441a5; margin-top:100px; cursor:pointer; font-size:20px; border-radius: 20px; border-color: #6441a5;"
+        type="button" class="hoverStyle" id="openuser" value="Suche Username Changes">
+    <script>
+        document.getElementById('openuser').addEventListener('click', function () {
+            usernamen = document.getElementById('namen').value;
+            window.open(`https://twitch-tools.rootonline.de/username_changelogs_search.php?q=${usernamen}`);
+        });
+    </script>
+</body>
+
+</html>
