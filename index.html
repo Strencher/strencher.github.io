@@ -47,19 +47,21 @@
     }   
      </style>
      <script>
-    document.getElementsByClassName("LogViewer").onclick = function (eve) {
-        window.open("./logviewer.html");
+    function logviewer() {
+        window.open("./LogViewer.html");
     }
-    document.getElementsByClassName("ViewerCard").onclick = function (eve) {
+    function viewercard() {
         window.open("./Viewercard.html");
     }
-    document.getElementsByClassName("TwitchChat").onclick = function (eve) {
+    function twitchChat() {
         window.open("./twitchchat.html");
     }
-    document.getElementsByClassName("home").onclick = function (eve) {
+    function home() {
         window.open("./index.html");
     }
-     
+    function usernameChanges() {
+        window.open("./username.html");
+    }
      
      
      
@@ -78,24 +80,24 @@
             </img>
         </button>
             </form>
-            <form action="LogViewer.html">
+            <form onclick="logviewer()">
                     <input class="hoverStyle LogViewer buttons"
                         style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
                         type="submit" value="LogViewer 🔎">
             </input>
             </form>
-             <form action="Viewercard.html">
+             <form onclick="viewercard()">
                     <input class="hoverStyle ViewerCard buttons"
                         style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
                         type="submit" value="ViewerCard 🔎">
             </form>
-            <form action="twitchchat.html">
+            <form onclick="twitchChat()">
                     <input class="hoverStyle TwitchChat buttons"
                         style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
                         type="submit" value="TwitchChat">
             </input>
                 </form>
-                <form action="username.html">
+                <form onclick="usernameChanges()">
                     <input class="hoverStyle Changes buttons"
                         style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
                         type="submit" value="UsernChanges">
