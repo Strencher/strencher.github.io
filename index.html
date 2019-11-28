@@ -30,19 +30,22 @@
          width: auto;
          height: 150px;
      }   
-     </style>
+     <style>
      <script>
-    document.getElementsByClassName("LogViewer").onclick = function (eve) {
+    function logviewerOnClick() {
         window.open("./LogViewer.html");
     }
-    document.getElementsByClassName("ViewerCard").onclick = function (eve) {
+    function viewercardOnClick() {
         window.open("./Viewercard.html");
     }
-    document.getElementsByClassName("TwitchChat").onclick = function (eve) {
+    function twitchChatOnClick() {
         window.open("./twitchchat.html");
     }
-    document.getElementsByClassName("home").onclick = function (eve) {
+    function homeOnClick() {
         window.open("./index.html");
+    }
+    function usernameOnClick() {
+        window.open("./username.html");
     }
      
      
@@ -56,31 +59,31 @@
 <body style="background-color: #1a1919">
         <title class="title">Das Sind Twitch Tools</title>
 
-    <form action="index.html">
+    <form onclick="homeOnClick()">
         <button style="background-color: transparent; border-color: transparent;" class="home">
             <img style="background-color: transparent;" class="hoverStyle home" type="image"
                 src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
             </img>
         </button>
             </form>
-            <form action="LogViewer.html">
+            <form onclick"logviewerOnClick()">
                     <input class="hoverStyle LogViewer buttons"
                         style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
                         type="submit" value="LogViewer 🔎">
             </input>
             </form>
-             <form action="Viewercard.html">
+             <form onclick="viewercardOnClick()">
                     <input class="hoverStyle ViewerCard buttons"
                         style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
                         type="submit" value="ViewerCard 🔎">
             </form>
-            <form action="twitchchat.html">
+            <form onclick="twitchChatOnClick()">
                     <input class="hoverStyle TwitchChat buttons"
                         style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
                         type="submit" value="TwitchChat">
             </input>
                 </form>
-                <form action="username.html">
+                <form onclick="usernameOnClick()">
                     <input class="hoverStyle Changes buttons"
                         style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
                         type="submit" value="UsernChanges">
