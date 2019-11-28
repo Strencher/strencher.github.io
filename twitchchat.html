@@ -5,24 +5,39 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <style>
-    .hoverStyle:hover  {
-         cursor: pointer;
-         transform: scale(1.1);
-     }
-    
-    
+        .hoverStyle:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .dragger {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+
+        }
     </style>
     <title class="title">Chat</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
     </link>
+
 </head>
 
 <body bgcolor="#262626">
-    <form action="index.html">
-        <input class="hoverStyle" type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
+    <form style="z-index: 99999;" action="index.html">
+        <input class="hoverStyle" type="image"
+            src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
     </form>
-    <iframe style="margin-top: 25px;" frameborder="0" scrolling="no" id="chat_embed" class="removeTwitchChat"
-        src="https://www.twitch.tv/embed/ShoXx__/chat?darkpopout" height="700" width="850">
-    </iframe>
+    <div class="dragger">
+        <iframe style="margin-top: 25px; margin-right: auto; margin-left: auto;" frameborder="0" scrolling="no"
+            id="chat_embed" class="dragger" src="https://www.twitch.tv/embed/ShoXx__/chat?darkpopout" height="600"
+            width="950">
+        </iframe>
+    </div>
+</body>
 
 </html>
