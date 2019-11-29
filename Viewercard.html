@@ -9,7 +9,10 @@
          cursor: pointer;
          transform: scale(1.1);
      }
-    
+    .viewercard1 {
+        text-align: center;
+        font-family: Arial;
+    }
      ::-webkit-scrollbar {
     background-color: #222222;
     }
@@ -31,21 +34,29 @@
 </head>
 
 <body bgcolor=#1A1919>
-    <h2 style="color:#6441a5; text-decoration:underline" class="viewercard">Twitch ViewerCard</h2>
+    <h1 style="color:#6441a5; text-decoration:underline" class="viewercard1">Twitch ViewerCard</h1>
     <form action="index.html">
         <input class="hoverStyle" type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
     </form>
     <input
-        style="border-color:black; background-color: transparent; cursor:text; color:white; border-radius: 20px; font-size: 20px;"
+        style="border-color:black; background-color: transparent; cursor:text; color:white; border-radius: 9px; font-size: 20px;"
         type="text" placeholder="Name:" id="namen">
     <input
-        style="color:white; background-color:#6441a5; margin-top:100px; cursor:pointer; font-size:20px; border-radius: 20px; border-color: #6441a5;"
+        onclick="onClicker()" style="color:white; background-color:#6441a5; margin-top:100px; cursor:pointer; font-size:20px; border-radius: 9px; border-color: #6441a5;"
         type="button" class="hoverStyle" id="openuser" value="Öffne ViewerCard von ShoXx">
     <script>
-        document.getElementById('openuser').addEventListener('click', function () {
-            usernamen = document.getElementById('namen').value;
-            window.open(`https://www.twitch.tv/popout/shoxx__/viewercard/${usernamen}`);
-        });
+    function onClicker() {
+        if(document.getElementById('namen').value === "") {
+            alert("Bitte gebe einen namen ein!");
+            return;
+        } else {
+            
+            let usernamen = document.getElementById('namen').value;
+            document.getElementById('openuser').addEventListener('click', function () {
+                window.open(`https://www.twitch.tv/popout/shoxx__/viewercard/${usernamen}`);
+            });
+        }
+    }
     </script>
 </body>
 
