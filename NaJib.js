@@ -8,11 +8,11 @@ var NaJib = {
     },
     clearCSS: function (id) {
         let styleid = document.getElementById(id);
-        try {
-            styleid.remove();
+        if (!styleid) {
+            console.error(`Please enter a valid id!`)
         }
-        catch (err) {
-            console.error(`${err.message}`);
+        if (styleid) {
+            styleid.remove();
         }
     },
     injectScript: function (id, script) {
