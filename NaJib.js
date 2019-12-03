@@ -14,5 +14,21 @@ var NaJib = {
         catch (err) {
             console.error(`${err.message}`);
         }
+    },
+    injectScript: function (id, script) {
+        let element = document.createElement("script");
+        element.innerHTML = script;
+        element.type = "text/javascript";
+        element.id = id;
+        document.head.appendChild(element);
+    },
+    clearScript: function (id) {
+        let scriptid = document.getElementById(id);
+        if (!scriptid) {
+            console.error(`Please enter a valid id!`)
+        }
+        if (scriptid) {
+            scriptid.remove();
+        }
     }
 }
