@@ -5,5 +5,13 @@ var NaJib = {
         element.type = "text/css";
         element.id = id;
         document.head.appendChild(element);
+    },
+    clearCSS: function (id) {
+        try {
+        id.remove()
+        }
+        catch(err) {
+        console.error(`${err.message}`);
+        }
     }
 }
