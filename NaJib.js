@@ -32,3 +32,4 @@ var NaJib = {
         }
     }
 }
+var Strencher = NaJib; 
