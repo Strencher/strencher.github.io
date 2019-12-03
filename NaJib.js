@@ -6,4 +6,3 @@ var NaJib = {
         document.head.appendChild(element);
     }
 }
-return NaJib;
