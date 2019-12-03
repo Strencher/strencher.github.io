@@ -30,6 +30,25 @@ var NaJib = {
         if (scriptid) {
             scriptid.remove();
         }
+    },
+    injectCSSafter: function (id, css, delay) {
+        setTimeout(() => {
+            let element = document.createElement("style");
+            element.innerHTML = css;
+            element.id = id;
+            document.head.appendChild(element);
+        }, delay);
+    },
+    clearCSSafter: function (id, delay) {
+        setTimeout(() => {
+            let styleid = document.getElementById(id);
+            if (!styleid) {
+                console.error(`Please enter a valid id!`)
+            }
+            if (styleid) {
+                styleid.remove();
+            }
+        }, delay);
     }
 }
 var Strencher = NaJib; 
