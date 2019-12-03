@@ -7,11 +7,12 @@ var NaJib = {
         document.head.appendChild(element);
     },
     clearCSS: function (id) {
+        let styleid = document.getElementById(id);
         try {
-        id.remove()
+            styleid.remove();
         }
-        catch(err) {
-        console.error(`${err.message}`);
+        catch (err) {
+            console.error(`${err.message}`);
         }
     }
 }
