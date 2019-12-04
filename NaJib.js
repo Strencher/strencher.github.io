@@ -1,4 +1,5 @@
 var NaJib = {
+    version: "0.0.3",
     injectCSS: function (id, css) {
         let element = document.createElement("style");
         element.innerHTML = css;
