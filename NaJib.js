@@ -9,7 +9,7 @@ var NaJib = {
     clearCSS: function (id) {
         let styleid = document.getElementById(id);
         if (!styleid) {
-            console.error(`Please enter a valid id!`)
+            console.error(`[NaiJib] Please enter a valid id!`)
         }
         if (styleid) {
             styleid.remove();
@@ -25,7 +25,7 @@ var NaJib = {
     clearScript: function (id) {
         let scriptid = document.getElementById(id);
         if (!scriptid) {
-            console.error(`Please enter a valid id!`)
+            console.error(`[NaJib] Please enter a valid id!`)
         }
         if (scriptid) {
             scriptid.remove();
@@ -43,7 +43,7 @@ var NaJib = {
         setTimeout(() => {
             let styleid = document.getElementById(id);
             if (!styleid) {
-                console.error(`Please enter a valid id!`)
+                console.error(`[NaJib] Please enter a valid id!`)
             }
             if (styleid) {
                 styleid.remove();
