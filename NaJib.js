@@ -26,16 +26,6 @@ var NaJib = {
         document.head.appendChild(element);
         return element;
     },
-    clearScript: function (id) {
-        let scriptid = document.getElementById(id);
-        if (!scriptid) {
-            console.error(`%c[NaiJib]%c Please enter a valid id!`, "color: #3A71C1", "");
-        }
-        if (scriptid) {
-            scriptid.remove();
-            console.info(`%c[NaiJib]%c Successfull cleared Script!`, "color: #3A71C1", "");
-        }
-    },
     injectCSSafter: function (id, css, delay) {
         setTimeout(() => {
             let element = document.createElement("style");
