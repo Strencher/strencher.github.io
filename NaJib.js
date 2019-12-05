@@ -25,10 +25,10 @@ var NaJib = {
         document.head.appendChild(element);
         return element;
     },
-    async injectCSSafter: function (id, css, delay) {
+    injectCSSafter: async function (id, css, delay) {
         return new Promise((resolve, reject) => window.setTimeout(() => resolve(this.injectCSS(id, css)), delay));
     },
-    async clearCSSafter: function (id, delay) {
+    clearCSSafter: async function (id, delay) {
         return new Promise((resolve, reject) => window.setTimeout(() => resolve(this.clearCSS(id)), delay));
     },
     showToast: function (text, options) {
