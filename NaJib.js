@@ -1,19 +1,21 @@
 var NaJib = {
-    version: "0.0.3",
+    version: "0.0.4",
     injectCSS: function (id, css) {
         let element = document.createElement("style");
         element.innerHTML = css;
         element.type = "text/css";
         element.id = id;
         document.head.appendChild(element);
+        return element;
     },
     clearCSS: function (id) {
         let styleid = document.getElementById(id);
         if (!styleid) {
-            console.error(`[NaiJib] Please enter a valid id!`)
+            console.error(`%c[NaiJib]%c Please enter a valid id!`, "color: #3A71C1", "");
         }
         if (styleid) {
             styleid.remove();
+            console.info(`%c[NaiJib]%c Successfull cleared CSS!`, "color: #3A71C1", "");
         }
     },
     injectScript: function (id, script) {
@@ -22,14 +24,16 @@ var NaJib = {
         element.type = "text/javascript";
         element.id = id;
         document.head.appendChild(element);
+        return element;
     },
     clearScript: function (id) {
         let scriptid = document.getElementById(id);
         if (!scriptid) {
-            console.error(`[NaJib] Please enter a valid id!`)
+            console.error(`%c[NaiJib]%c Please enter a valid id!`, "color: #3A71C1", "");
         }
         if (scriptid) {
             scriptid.remove();
+            console.info(`%c[NaiJib]%c Successfull cleared Script!`, "color: #3A71C1", "");
         }
     },
     injectCSSafter: function (id, css, delay) {
@@ -38,16 +42,18 @@ var NaJib = {
             element.innerHTML = css;
             element.id = id;
             document.head.appendChild(element);
+            return element;
         }, delay);
     },
     clearCSSafter: function (id, delay) {
         setTimeout(() => {
             let styleid = document.getElementById(id);
             if (!styleid) {
-                console.error(`[NaJib] Please enter a valid id!`)
+                console.error(`%c[NaiJib]%c Please enter a valid id!`, "color: #3A71C1", "");
             }
             if (styleid) {
                 styleid.remove();
+                console.info(`%c[NaiJib]%c Successfull cleared CSS!`, "color: #3A71C1", "");
             }
         }, delay);
     },
