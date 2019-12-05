@@ -26,16 +26,6 @@ var NaJib = {
         document.head.appendChild(element);
         return element;
     },
-    clearScript: function (id) {
-        let scriptid = document.getElementById(id);
-        if (!scriptid) {
-            console.error(`%c[NaiJib]%c Please enter a valid id!`, "color: #3A71C1", "");
-        }
-        if (scriptid) {
-            scriptid.remove();
-            console.info(`%c[NaiJib]%c Successfull cleared Script!`, "color: #3A71C1", "");
-        }
-    },
     injectCSSafter: function (id, css, delay) {
         setTimeout(() => {
             let element = document.createElement("style");
@@ -154,47 +144,48 @@ var NaJib = {
             }, 5000);
             $(".panels-j1Uci_").prepend(a);
         }
-        if (!document.getElementById("NaJibCSS")) {
 
-            NaJib.injectCSS("NaJibCSS", `
-            .najib-Toast-success {
-                background-color: #43B581 !important;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
-                margin-bottom: 3px;
-            }
-            .najib-toast-text {
-                font-size: 15px;
-                color: white;
-                text-align: center;
-            }
-            .najib-Toast-error {
-                background-color: #f04747 !important;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
-                margin-bottom: 3px;
-            }
-            .najib-Toast-normal {
-                background-color: #36393f !important;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
-                margin-bottom: 3px;
-            }
-            .najib-Toast-info {
-                background-color: #0096d6 !important;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
-                margin-bottom: 3px;
-            }
-        `);
-        }
     }
+}
+if (!document.getElementById("NaJibCSS")) {
+
+    NaJib.injectCSS("NaJibCSS", `
+                    .najib-Toast-success {
+                        background-color: #43B581 !important;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        margin-bottom: 3px;
+                    }
+                    .najib-toast-text {
+                        font-size: 15px;
+                        color: white;
+                        text-align: center;
+                    }
+                    .najib-Toast-error {
+                        background-color: #f04747 !important;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        margin-bottom: 3px;
+                    }
+                    .najib-Toast-normal {
+                        background-color: #36393f !important;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        margin-bottom: 3px;
+                    }
+                    .najib-Toast-info {
+                        background-color: #0096d6 !important;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        margin-bottom: 3px;
+                    }
+                `);
 }
