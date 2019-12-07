@@ -40,26 +40,27 @@ var NaJib = {
         return new Promise((resolve, reject) => window.setTimeout(() => resolve(this.clearCSS(id)), delay));
     },
     showToast: function (text, options) {
-        const {timeout = 5000, type = "normal", onclick = null} = options;
-        let a = $(`<div class="container-1giJp5 da-container najib-Toast-${type}">
-            <div class="inner-tyMogq da-inner">
-                <div class="labelWrapper-Pniq53 da-labelWrapper">
-                    <div class="size14-e6ZScH title-eS5yk3 da-title rtcConnectionStatusConnected-VRZDjy">
+                const { timeout = 5000, type = "normal", onclick = null } = options;
+                let a = $(`<div class="container-1giJp5 da-container najib-Toast-${type}">
+                    <div class="inner-tyMogq da-inner">
+                        <div class="labelWrapper-Pniq53 da-labelWrapper">
+                            <div class="size14-e6ZScH title-eS5yk3 da-title rtcConnectionStatusConnected-VRZDjy">
+                                </div>
+                                    <h1 class="najib-toast-text">
+                                        ${text}
+                                    </h1>
+                                </div>
+                            </div>
                         </div>
-                            <h1 class="najib-toast-text">
-                                ${text}
-                            </h1>
-                        </div>
+                    <div class="flex-1xMQg5 flex-1O1GKY da-flex da-flex horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6" style="flex: 0 0 auto;">
                     </div>
-                </div>
-            <div class="flex-1xMQg5 flex-1O1GKY da-flex da-flex horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6" style="flex: 0 0 auto;">
-            </div>
-        </div>`);
-        a.on("contextmenu", a.remove);
-        window.setTimeout(a.remove, timeout);
-        if(typeof onclick === "function") a.on("click", onclick);
-        return a;
-    }
+                </div>`);
+                a.on("contextmenu", () => { a.remove() });
+                setTimeout(() => { a.remove() }, timeout);
+                if (typeof onclick === "function") a.on("click", onclick);
+                $(".panels-j1Uci_").prepend(a);
+              return a;
+     }
 }
 
 NaJib.injectCSS("NaJibCSS", `
