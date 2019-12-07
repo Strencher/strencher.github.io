@@ -8,6 +8,14 @@ var NaJib = {
         document.head.appendChild(element);
         return element;
     },
+    deleteElement: function (name) {
+        let element = document.querySelector(name);
+        if (!element) {
+            console.error(`%c[NaiJib]%c Please enter a valid name!`, "color: #3A71C1", "");
+         } else {
+           element.remove()
+         }
+     },
     clearCSS: function (id) {
         let styleid = document.getElementById(id);
         if (!styleid) {
