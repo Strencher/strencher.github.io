@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>ViewerList</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
+</head>
+
+<body bgcolor=#1a1919>
+    <style>
+        .cat {
+            color: white;
+            background-color: #101010;
+            width: 220px;
+            margin: 6px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        window.$ = (e) => { return document.querySelectorAll(e) };
+        async function getTwitch(url) {
+            return new Promise((resolve, reject) => {
+                let r = new XMLHttpRequest();
+                r.open("GET", url, false);
+                r.setRequestHeader("Client-ID", 'eef5go90cx3q1yc0izyd0spfpeioxa');
+                r.setRequestHeader("Accept", 'Accept: application/vnd.twitchtv.v5+json');
+                r.addEventListener("load", e => {
+                    if (r.status == 200) resolve(JSON.parse(r.responseText));
+                    else resolve();
+                });
+                r.send();
+            });
+        }
+        (async () => {
+            let data = await getTwitch("https://tmi.twitch.tv/group/user/strencher_/chatters");
+            data.chatters.broadcaster.forEach(casters => {
+                $(".caster").innerHTML += casters;
+            });
+            data.chatter.moderators.forEach(casters => {
+                $(".mod").innerHTML += casters;
+            });
+            data.chatters.vips.forEach(casters => {
+                $(".vip").innerHTML += casters;
+            });
+            data.chatters.viewers.forEach(casters => {
+                $(".users").innerHTML += casters;
+            });
+        })()
+    </script>
+    <form action="index.html">
+        <input type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
+    </form>
+    <div class="viewerlist">
+        <div class="cat caster">BroadCaster</div>
+        <div class="cat mod">Moderators</div>
+        <div class="cat vip">Vips's</div>
+        <div class="cat users">Other Users</div>
+    </div>
+</body>

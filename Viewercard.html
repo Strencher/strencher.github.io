@@ -5,29 +5,34 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <style>
-    .hoverStyle:hover  {
-         cursor: pointer;
-         transform: scale(1.1);
-     }
-    .viewercard1 {
-        text-align: center;
-        font-family: Arial;
-    }
-     ::-webkit-scrollbar {
-    background-color: #222222;
-    }
-    ::-webkit-scrollbar-button {
-    background-color: #222222;
-    }
-    ::-webkit-scrollbar-thumb {
-    background-color: #101010;
-    border-radius: 10px;
-    border-color: #101010;
-    }
-    ::-webkit-scrollbar-track-piece {
-    background-color: #222222;
-    border-color: #222222;
-    }   
+        .hoverStyle:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .viewercard1 {
+            text-align: center;
+            font-family: Arial;
+        }
+
+        ::-webkit-scrollbar {
+            background-color: #222222;
+        }
+
+        ::-webkit-scrollbar-button {
+            background-color: #222222;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #101010;
+            border-radius: 10px;
+            border-color: #101010;
+        }
+
+        ::-webkit-scrollbar-track-piece {
+            background-color: #222222;
+            border-color: #222222;
+        }
     </style>
     <title class="title">ViewerCard</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
@@ -36,27 +41,24 @@
 <body bgcolor=#1A1919>
     <h1 style="color:#6441a5; text-decoration:underline" class="viewercard1">Twitch ViewerCard</h1>
     <form action="index.html">
-        <input class="hoverStyle" type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
+        <input class="hoverStyle" type="image"
+            src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
     </form>
     <input
         style="border-color:black; background-color: transparent; cursor:text; color:white; border-radius: 9px; font-size: 20px;"
         type="text" placeholder="Name:" id="namen">
     <input
-        onclick="onClicker()" style="color:white; background-color:#6441a5; margin-top:100px; cursor:pointer; font-size:20px; border-radius: 9px; border-color: #6441a5;"
+        style="color:white; background-color:#6441a5; margin-top:100px; cursor:pointer; font-size:20px; border-radius: 9px; border-color: #6441a5;"
         type="button" class="hoverStyle" id="openuser" value="Öffne ViewerCard von ShoXx">
     <script>
-    function onClicker() {
-        if(document.getElementById('namen').value === "") {
-            alert("Bitte gebe einen namen ein!");
-            return;
-        } else {
-            
-            let usernamen = document.getElementById('namen').value;
-            document.getElementById('openuser').addEventListener('click', function () {
-                window.open(`https://www.twitch.tv/popout/shoxx__/viewercard/${usernamen}`);
-            });
-        }
-    }
+        window.$ = (e) => { return document.querySelectorAll(e) };
+        $("#openuser")[0].addEventListener("click", () => {
+            if ($("#namen")[0].value.length > "3") window.open(`https://www.twitch.tv/popout/shoxx__/viewercard/${$("#namen")[0].value}`)
+        });
+        $("#namen")[0].addEventListener("keydown", (e) => {
+            if (e.keyCode != 13) return;
+            $('#openuser')[0].click();
+        })
     </script>
 </body>
 

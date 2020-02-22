@@ -5,269 +5,75 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <style>
-    .hoverStyle:hover  {
-         cursor: pointer;
-         transform: scale(1.1);
-     }
-     ::-webkit-scrollbar {
-    background-color: #222222;
-    }
-    ::-webkit-scrollbar-button {
-    background-color: #222222;
-    }
-    ::-webkit-scrollbar-thumb {
-    background-color: #101010;
-    border-radius: 10px;
-    border-color: #101010;
-    }
-    ::-webkit-scrollbar-track-piece {
-    background-color: #222222;
-    border-color: #222222;
-    }
-    
+        .hoverStyle:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        ::-webkit-scrollbar {
+            background-color: #222222;
+        }
+
+        ::-webkit-scrollbar-button {
+            background-color: #222222;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #101010;
+            border-radius: 10px;
+            border-color: #101010;
+        }
+
+        ::-webkit-scrollbar-track-piece {
+            background-color: #222222;
+            border-color: #222222;
+        }
     </style>
     <title class="title">Username Changes</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
 </head>
 
 <body bgcolor=#1A1919>
-    <h2 style="color:#6441a5; text-decoration:underline" class="viewercard">Twitch UsernameChangelog</h2>
+    <h2 style="color:#6441a5; text-decoration:underline; text-align: center; font-family: Arial, Helvetica, sans-serif;"
+        class="viewercard">Twitch UsernameChangelog</h2>
     <form action="index.html">
-        <input class="hoverStyle" type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
+        <input class="hoverStyle" type="image"
+            src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
     </form>
     <input
         style="border-color:black; background-color: transparent; cursor:text; color:white; border-radius: 20px; font-size: 20px; margin-bottom: 50px;"
-        placeholder="UserID:" type="text" id="namen">
+        placeholder="UserName" type="text" id="namen">
     <input
         style="color:white; background-color:#6441a5; margin-top:100px; cursor:pointer; font-size:20px; border-radius: 20px; border-color: #6441a5;"
         type="button" class="hoverStyle" id="openuser" value="Suche Username Changes">
+
     <script>
-        document.getElementById('openuser').addEventListener('click', function () {
-            usernamen = document.getElementById('namen').value;
-            window.open(`https://twitch-tools.rootonline.de/username_changelogs_search.php?q=${usernamen}`);
-        });
+        window.$ = (e) => { return document.querySelectorAll(e) };
+        function getUserId(name) {
+            let req = new XMLHttpRequest();
+            req.open("GET", "https://api.twitch.tv/helix/users?login=" + name, false);
+            req.setRequestHeader("Accept", "application/json");
+            req.setRequestHeader("Client-ID", 'abe7gtyxbr7wfcdftwyi9i5kej3jnq');
+            req.send(null);
+            return req.responseText;
+        }
+
+        $("#openuser")[0].addEventListener("click", (e) => {
+            try {
+                if ($("#namen")[0].value.length < "3") return;
+                let parseName = JSON.parse(getUserId($("#namen")[0].value)).data[0].id;
+                window.open(`https://twitch-tools.rootonline.de/username_changelogs_search.php?q=${parseName}`)
+            }
+            catch (err) {
+                alert(`Fehler bei laden des namen "${$("#namen")[0].value}" oder der angegebene name ist falsch. ggf versuche es erneut.`)
+            }
+        })
+        $("#namen")[0].addEventListener("keydown", (e) => {
+            if (e.keyCode !== 13) return;
+            $("#openuser")[0].click()
+        })
+
     </script>
-            <div style="color: gray; font-family: Arial, serif;">
-                    <img src="twitch.png" style="text-align: center; width: 150px;"><br><br>
-                    <input type="text" id="q" name="q" style="text-align: center; width: 150px" placeholder="benutzername or benutzerid"
-                        autocomplete="off"><br>
-                    <div style="margin-left: 5px; margin-top: 5px;">
-                        <small>
-                            Detected: <span id="detected">Username</span> <a href="#"
-                                title="click to manually switch between username and user id" id="switch">⇄</a><br>
-                        </small>
-                        <div id="result" style>
-                            <b id="response"></b> <a id="copy" href="#">copy</a><br>
-                        </div>
-                        <small id="error" style="color: red;"></small>
-                        <small id="success" style="color: green;"></small>
-                        <small id="copied" style="color: blue;"></small>
-                    </div>
-                </div>
-                <script>
-                const CLIENT_ID = 'abe7gtyxbr7wfcdftwyi9i5kej3jnq';
-
-const TYPE_USERNAME = 'Username';
-const TYPE_USER_ID = 'User id';
-
-let detected = TYPE_USERNAME;
-
-let resultDiv = document.getElementById("result");
-let queryInput = document.getElementById('q');
-let typer = document.getElementById("insert");
-let queryOutput = document.getElementById('response');
-let detectedText = document.getElementById('detected');
-let detectedSwitch = document.getElementById('switch');
-let copyLink = document.getElementById("copy");
-let errorMsg = document.getElementById("error");
-let namen = document.getElementById("namen");
-let successMsg = document.getElementById("success");
-let copiedMsg = document.getElementById("copied");
-
-setDetected(TYPE_USERNAME);
-
-queryInput.addEventListener('keyup', function (e) {
-    let key = e.which || e.keyCode;
-    if (key === 13) {
-        runRoutine(queryInput.value, detected);
-    } else {
-        runDetection(queryInput.value, (response) => setDetected(response));
-    }
-});
-
-detectedSwitch.addEventListener('click', function (e) {
-    if(detected === TYPE_USERNAME) {
-        setDetected(TYPE_USER_ID);
-    } else {
-        setDetected(TYPE_USERNAME);
-    }
-	// if they're switch the mode while the textbox has content, there's a good chance they want to re-run it in the new mode
-	if(queryInput.value.length > 0) {
-		runRoutine(queryInput.value, detected);
-	}
-});
-
-copyLink.addEventListener('click', function (e) { copyResults(); });
-
-function runDetection(input, callback) {
-    if(isNaN(input)) {
-        callback(TYPE_USERNAME);
-    } else {
-        callback(TYPE_USER_ID)
-    }
-}
-
-function setDetected(newValue) {
-    detected = newValue;
-    detectedText.innerText = newValue;
-}
-
-function runRoutine(input, type) {
-    clearError();
-
-    if(input.length <= 0) {
-        setError("Please provide an username or user id!");
-        return;
-    }
-
-    if (type === TYPE_USERNAME) {
-        getUserId(fetchUserId, failedRequest);
-    } else if (type === TYPE_USER_ID) {
-        getUsername(fetchUsername, failedRequest);
-    }
-}
-
-function fetchUserId(json, username) {
-    if ("error" in json) {
-        badRequest("username", username);
-    } else {
-        queryOutput.innerText = json['data'][0]['id'];
-        setSuccess("User ID retrieved successfully.");
-		resultDiv.style.display = "";
-    }
-}
-
-function fetchUsername(json, userid) {
-    if ("error" in json) {
-        badRequest("user id", userid);
-    } else {
-        queryOutput.innerHTML = json['data'][0]['login'];
-        setSuccess("Username retrieved successfully.");
-		resultDiv.style.display = "";
-    }
-}
-
-function failedRequest() {
-    setError("The request you attempted failed! " + detected + " " + queryInput.value + " doesn't exist.");
-	resultDiv.style.display = "none";
-	clearSuccess();
-}
-
-function badRequest(type, resource) {
-    setError("The " + type + " '" + resource + "' was not valid!");
-}
-
-function getUserId(fetchUserId, failedRequest) {
-    queryOutput.innerText = "";
-
-    let req = new XMLHttpRequest();
-    req.onreadystatechange = function () {
-        if (req.readyState === 4 && req.status === 200) {
-            let json = JSON.parse(req.responseText);
-            if (json['data'].length > 0) {
-                fetchUserId(json, queryInput.value);
-            } else {
-                badRequest("username", queryInput.value);
-            }
-        } else if (req.readyState === 4) {
-            failedRequest();
-        }
-    };
-
-    req.open("GET", "https://api.twitch.tv/helix/users?login=" + queryInput.value, true);
-    req.setRequestHeader("Accept", "application/json");
-    req.setRequestHeader("Client-ID", CLIENT_ID);
-    req.send(null);
-}
-
-function getUsername(fetchUsername, failedRequest) {
-    queryOutput.value = "";
-
-    let req = new XMLHttpRequest();
-    req.onreadystatechange = function () {
-        if (req.readyState === 4 && req.status === 200) {
-            let json = JSON.parse(req.responseText);
-            if (json['data'].length > 0) {
-                fetchUsername(json, queryInput.value);
-            } else {
-                badRequest("user id", queryInput.value);
-            }
-        } else if (req.readyState === 4) {
-            failedRequest();
-        }
-    };
-
-    req.open("GET", "https://api.twitch.tv/helix/users?id=" + queryInput.value, true);
-    req.setRequestHeader("Accept", "application/json");
-    req.setRequestHeader("Client-ID", CLIENT_ID);
-    req.send(null);
-}
-
-function setSuccess(successMsgCnts) {
-    successMsg.innerHTML = successMsgCnts;
-    setTimeout(clearSuccess, 10000);
-	clearError();
-}
-
-function setCopied(requestType) {
-	copiedMsg.innerHTML = "Copied " + requestType + "!";
-	setTimeout(clearCopied, 5000);
-}
-
-function clearCopied() {
-	copiedMsg.innerHTML = "";
-}
-
-function clearSuccess() {
-    successMsg.innerHTML = "";
-}
-
-function setError(errorMsgCnts) {
-    errorMsg.innerHTML = errorMsgCnts;
-    setTimeout(clearError, 10000);
-}
-
-function clearError() {
-    errorMsg.innerHTML = "";
-}
-
-function copyResults() {
-	results = queryOutput.innerHTML;
-	
-	if(detected == TYPE_USERNAME) {
-		setCopied("user id");
-	} else {
-		setCopied("username");
-	}
-	document.oncopy = function(event) {
-		event.clipboardData.setData("text", results);
-		event.preventDefault();
-	};
-	document.execCommand("copy", false, null);
-}
-function insertResults() {
-    insert = queryOutput.innerHTML;
-	
-	if(detected == TYPE_USERNAME) {
-		setCopied("user id");
-	} else {
-		setCopied("username");
-	}
-	typer.onclick = function(event) {
-		namen.innerHTML = insert;
-	}
-}
-</script>
 </body>
 
 </html>

@@ -1,105 +1,64 @@
 <!DOCTYPE html lang="de">
+
 <head>
     <style>
-     .hoverStyle:hover  {
-         cursor: pointer;
-         transform: scale(1.1);
-     }
-     .ViewerCard {
-        margin-top: 12px;
-     }
-     .TwitchChat {
-         margin-top: 12px;
-     }
-     .Changes {
-         margin-top: 12px;
-     }
-     .home {
-         margin-top: 20px;
-     }
-     .title {
-         color: white;
-         font-size: 20px;
-         text-decoration: underline;
-         display: block;
-         text-align: center;
-     }
-     .buttons {
-         margin-left: 10px;
-         width: auto;
-         height: 150px;
-     }
-     ::-webkit-scrollbar {
-    background-color: #222222;
-    }
-    ::-webkit-scrollbar-button {
-    background-color: #222222;
-    }
-    ::-webkit-scrollbar-thumb {
-    background-color: #101010;
-    border-radius: 10px;
-    border-color: #101010;
-    }
-    ::-webkit-scrollbar-track-piece {
-    background-color: #222222;
-    border-color: #222222;
-    }   
-     </style>
-     <script>
-    function logviewer() {
-        window.open("./logviewer.html");
-    }
-    function viewercard() {
-        window.open("./Viewercard.html");
-    }
-    function twitchChat() {
-        window.open("./twitchchat.html");
-    }
-    function home() {
-        window.open("./index.html");
-    }
-    function usernameChanges() {
-        window.open("./username.html");
-    }
-     
-     
-     
-     </script>
+        .links {
+            color: #ffffff;
+            background-color: #9900ff;
+            width: 160px;
+            font-family: Arial;
+            border-radius: 10px;
+            height: 50px;
+            text-align: center;
+            font-size: 20px;
+            text-decoration: none;
+            display: block;
+            margin: 10px;
+        }
+
+        .links:hover {
+            filter: brightness(105%)
+        }
+
+        .title {
+            color: white;
+            font-size: 20px;
+            text-decoration: underline;
+            display: block;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ::-webkit-scrollbar {
+            background-color: #222222;
+        }
+
+        ::-webkit-scrollbar-button {
+            background-color: #222222;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #101010;
+            border-radius: 10px;
+            border-color: #101010;
+        }
+
+        ::-webkit-scrollbar-track-piece {
+            background-color: #222222;
+            border-color: #222222;
+        }
+    </style>
     <title id="title-index">TwitchTools</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
     <meta charset="utf-8">
 </head>
-<body style="background-color: #1a1919">
-        <h1 class="title">Das Sind Twitch Tools</h1>
 
-    <form action="index.html">
-        <button style="background-color: transparent; border-color: transparent;" class="home">
-            <img style="background-color: transparent;" class="hoverStyle home" type="image"
-                src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
-            </img>
-        </button>
-            </form>
-            <form onclick="logviewer()">
-                    <input class="hoverStyle LogViewer buttons"
-                        style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
-                        type="submit" value="LogViewer 🔎">
-            </input>
-            </form>
-             <form onclick="viewercard()">
-                    <input class="hoverStyle ViewerCard buttons"
-                        style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
-                        type="submit" value="ViewerCard 🔎">
-            </form>
-            <form onclick="twitchChat()">
-                    <input class="hoverStyle TwitchChat buttons"
-                        style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
-                        type="submit" value="TwitchChat">
-            </input>
-                </form>
-                <form onclick="usernameChanges()">
-                    <input class="hoverStyle Changes buttons"
-                        style="color:white; border-radius: 20px; font-size:20px; background-color: #6441a5; border-color: black;"
-                        type="submit" value="UsernChanges">
-            </input>
-                </form>
+<body style="background-color: #1a1919">
+    <h1 class="title">Das Sind Twitch Tools</h1>
+    <a style="width: 32px; height: 32px; display: block; background-image: url('https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png')"
+        href="./index.html"></a>>
+    <a class="links" href="./Viewercard.html">ViewerCard🔎</a>
+    <a class="links" href="./twitchchat.html">TwitchChat</a>
+    <a class="links" href="/username.html">UserName Changes</a>
+    <a style="color: red;" class="links" href="/Viewerliste.html">!BETA! UserName Changes</a>
 </body>
