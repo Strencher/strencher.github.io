@@ -18,14 +18,44 @@
             font-family: sans-serif;
             font-weight: bold;
         }
+
+        .users,
+        .mod,
+        .caster,
+        .vip {
+            font-weight: none !important;
+            text-transform: none !important;
+            color: #b8b8b8;
+            position: relative;
+            left: 67px;
+            font-size: 17px;
+            max-width: 150px;
+        }
     </style>
+    <form action="index.html">
+        <input type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
+    </form>
+    <div class="viewerlist">
+        <div class="cat">BroadCaster
+        </div>
+        <div class="caster"></div>
+        <div class="cat">MODERATORS
+        </div>
+        <div class="mod"></div>
+        <div class="cat">Vips's
+        </div>
+        <div class="vip"></div>
+        <div class="cat">Other Users
+        </div>
+        <div class="users"></div>
+    </div>
     <script>
         window.$ = (e) => { return document.querySelectorAll(e) };
         async function getTwitch(url) {
             return new Promise((resolve, reject) => {
                 let r = new XMLHttpRequest();
                 r.open("GET", url, false);
-                r.setRequestHeader("Client-ID", 'eef5go90cx3q1yc0izyd0spfpeioxa');
+                r.setRequestHeader("Client-ID", 'abe7gtyxbr7wfcdftwyi9i5kej3jnq');
                 r.setRequestHeader("Accept", 'Accept: application/vnd.twitchtv.v5+json');
                 r.addEventListener("load", e => {
                     if (r.status == 200) resolve(JSON.parse(r.responseText));
@@ -35,28 +65,23 @@
             });
         }
         (async () => {
-            let data = await getTwitch("https://tmi.twitch.tv/group/user/strencher_/chatters");
+            let data = await getTwitch("https://tmi.twitch.tv/group/user/shoxx__/chatters");
             data.chatters.broadcaster.forEach(casters => {
-                $(".caster").innerHTML += casters;
+                if (!casters) return;
+                $(".caster")[0].innerText += "\n" + casters.toString();
             });
-            data.chatter.moderators.forEach(casters => {
-                $(".mod").innerHTML += casters;
+            data.chatters.moderators.forEach(casters => {
+                if (!casters) return;
+                $(".mod")[0].innerText += "\n" + casters.toString();
             });
             data.chatters.vips.forEach(casters => {
-                $(".vip").innerHTML += casters;
+                if (!casters) return;
+                $(".vip")[0].innerText += "\n" + casters.toString();
             });
             data.chatters.viewers.forEach(casters => {
-                $(".users").innerHTML += casters;
+                if (!casters) return;
+                $(".users")[0].innerText += "\n" + casters.toString();
             });
         })()
     </script>
-    <form action="index.html">
-        <input type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
-    </form>
-    <div class="viewerlist">
-        <div class="cat caster">BroadCaster</div>
-        <div class="cat mod">Moderators</div>
-        <div class="cat vip">Vips's</div>
-        <div class="cat users">Other Users</div>
-    </div>
 </body>
