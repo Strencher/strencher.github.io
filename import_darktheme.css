@@ -538,7 +538,19 @@ a {
 .input-2VB9rf {
   background-color: #1B1B1B var(--Important);
 }
+<<<<<<< HEAD
 
 .wrapper-2aW0bm {
   background-color: #1a1919 var(--Important);
 }
+=======
+.wrapper-2aW0bm {
+  background-color: #1a1919 var(--Important);
+}
+.inner-MADQqc {
+  background-color: #1A1919 var(--Important);
+}
+.placeholder-37qJjk {
+    color: white;
+}
+>>>>>>> 2db8219d349396a5c8734434ea17a2d0396564a0
