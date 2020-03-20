@@ -14,7 +14,7 @@ function renderTooltip(e, text) {
                 tooltip.style.pointerEvents = "none";
                 tooltip.style.backgroundColor =  "black";
                 tooltip.style.top = e.getBoundingClientRect().top-30 + "px";
-                tooltip.style.left = e.getBoundingClientRect().right-28 + "px";
+                tooltip.style.left = e.getBoundingClientRect().right-40 + "px";
                 tooltip.appendChild(span);
                 document.body.appendChild(tooltip);
                 let mouseLeave = () => {
