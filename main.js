@@ -38,8 +38,8 @@ this.observer = new MutationObserver(changes => {
                             await navigator.clipboard.writeText("!tokens add "+el.innerText+" 5000000")
                         }
                         el.querySelector(".LogIcon").onclick = async function () {
+                            navigator.clipboard.writeText(el.innerText)
                             open("https://www.twitch.tv/popout/shoxx__/viewercard/"+el.innerText)
-                            await navigator.clipboard.writeText("!tokens add "+el.innerText+" 5000000")
                         }
                     }
                 })
@@ -52,9 +52,9 @@ this.observer = new MutationObserver(changes => {
                 r.querySelector(".CopyIcon").onclick = async function () {
                     await navigator.clipboard.writeText("!tokens add "+r.innerText+" 5000000")
                 }
-                r.querySelector(".LogIcon").onclick = async function () {
+                r.querySelector(".LogIcon").onclick = function () {
+                    navigator.clipboard.writeText(r.innerText)
                     open("https://www.twitch.tv/popout/shoxx__/viewercard/"+r.innerText)
-                    await navigator.clipboard.writeText("!tokens add "+r.innerText+" 5000000")
                 }
             }
             if(r && r.classList && r.classList.contains("tw-align-items-center")) {
@@ -67,9 +67,10 @@ this.observer = new MutationObserver(changes => {
                         o.querySelector(".CopyIcon").onclick = async function () {
                             await navigator.clipboard.writeText("!tokens add "+o.innerText+" 5000000")
                         }
-                        o.querySelector(".LogIcon").onclick = async function () {
+                        o.querySelector(".LogIcon").onclick = function () {
+                            navigator.clipboard.writeText(o.innerText);
                             open("https://www.twitch.tv/popout/shoxx__/viewercard/"+o.innerText)
-                            await navigator.clipboard.writeText("!tokens add "+o.innerText+" 5000000")
+                            
                         }
                     }
                 })
