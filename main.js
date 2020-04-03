@@ -1,3 +1,13 @@
+document.head.insertAdjacentHTML("afterbegin", 
+    `
+    <style>
+        .icon {
+            bottom: 0px !important;
+            position: relative;
+        }
+    </style>
+    `
+    )
 function parseDOM(e) {
         var a = document.createElement("div");
         a.innerHTML = e;
