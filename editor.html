@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterCSS Editor</title>
+    <style>
+        ::-webkit-scrollbar, ::-webkit-scrollbar-button, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-corner, ::-webkit-resizer { 
+            display: none; 
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js"></script>
+</head>
+
+<body>
+    <div style="width: 620px; height: 500px; position: fixed; left: 0; top: 0;" id="ace-editor"></div>
+    <div id="css"></div>
+    <script>
+        function editor() {
+            window.ed = ace.edit('ace-editor');
+            ed.setTheme('ace/theme/monokai');
+            ed.getSession().setMode('ace/mode/css')
+            ed.getSession().on('change', update);
+            ed.setValue(localStorage.getItem("value"))
+        }
+        function update() {
+            console.log(JSON.stringify({value: ed.getValue()}))
+            localStorage.setItem("value", ed.getValue())
+        }
+        console.log(require("electron"))
+        editor();
+        update();
+    </script>
+</body>
+
+</html>
