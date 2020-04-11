@@ -22,9 +22,11 @@
             ed.setTheme('ace/theme/monokai');
             ed.getSession().setMode('ace/mode/css')
             ed.getSession().on('change', update);
+            ed.setValue(localStorage.getItem("value"))
         }
         function update() {
             console.log(JSON.stringify({value: ed.getValue()}))
+            localStorage.setItem("value", ed.getValue())
         }
         editor();
     </script>
