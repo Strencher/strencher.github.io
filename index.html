@@ -48,21 +48,6 @@
             border-color: #222222;
         }
     </style>
-    <script>
-    function downloadURI(uri, name) {
-    let link = document.createElement("a");
-    link.download = name;
-    link.href = uri;
-    link.click();
-}
-
-function downloader(data, type, name) {
-    let blob = new Blob([data], {type});
-    let url = window.URL.createObjectURL(blob);
-    downloadURI(url, name);
-    window.URL.revokeObjectURL(url);
-}
-    </script>
     <title id="title-index">TwitchTools</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
     <meta charset="utf-8">
@@ -72,8 +57,7 @@ function downloader(data, type, name) {
     <h1 class="title">Das Sind Twitch Tools</h1>
     <a style="width: 32px; height: 32px; display: block; background-image: url('https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png')"
         href="./index.html"></a>
-    <a class="links" href="./Viewercard.html">ViewerCard🔎</a>
-    <a class="links" href="./twitchchat.html">TwitchChat</a>
-    <a class="links" href="/username.html">UserName Changes</a>
+    <a class="links" href="./Viewercard">ViewerCard🔎</a>
+    <a class="links" href="./twitchchat">TwitchChat</a>
     <a class="links" href="https://github.com/Strencher/strencher.github.io/blob/master/TwitchTools.zip?raw=true">Download Extension</a>
 </body>

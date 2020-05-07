@@ -1,0 +1,77 @@
+#wrapper {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+}
+body {
+    background-color: rgba(#FFFFFF, 1);
+}
+
+#viewerlist {
+  color: black;
+}
+
+#openuser {
+  color: white;
+  background-color: #111;
+  margin-top: 100px;
+  border-radius: 20%;
+  border: none;
+}
+
+#namen {
+  background-color: grey;
+  border-radius: 20%;
+}
+
+#Startseite {
+  color: black;
+  margin-top: 110px;
+  margin-bottom: 120px;
+  margin-left: 50px;
+}
+
+.title {
+  font-size: 100px;
+}
+
+#title-index {
+  color: blueviolet;
+}
+
+#test {
+  color: white;
+  
+  font-size: 20px;
+}
+
+#background {
+  background-color: #222222;
+}
+
+#viewercard1 {
+  color: #4caf50;
+  margin-top: 20px;
+}
+
+#viewerlist {
+  color: #4caf50;
+  margin-top: 20px;
+}
+
+#LogViewer {
+  color: #4caf50;
+  margin-top: 20px;
+}
+
+#Startseite1 {
+  color: #4caf50;
+  margin-top: 20px;
+  margin-bottom: 1px;
+}
+
+.viewerlisten {
+  color: grey;
+}

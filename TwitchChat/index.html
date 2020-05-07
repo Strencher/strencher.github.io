@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hoverStyle:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .dragger {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+
+        }
+    </style>
+    <script>
+    function popupOpen() {
+        var myWindow = window.open("", "myWindow", "width=1000,height=750");
+        myWindow.document.write(`<body bgcolor="#1A1919"><iframe style="margin-top: 25px; margin-right: auto; margin-left: auto;" frameborder="0" scrolling="no"
+            id="chat_embed" src="https://www.twitch.tv/embed/ShoXx__/chat?darkpopout" height="600"
+            width="950">
+        </iframe></body>`);
+        myWindow.document.title = "Twitch Chat";
+
+    }
+    </script>
+    <title class="title">Chat</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
+    </link>
+
+</head>
+<body bgcolor="#1A1919">
+<div onclick="popupOpen()">
+<svg title="Clicke um den Chat zu Popouten" style="cursor: pointer;" class="popup-button" aria-hidden="false" width="34" height="34" viewBox="0 0 24 24">
+    <path fill="#ffffff" d="M10 5V3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V14H19V19H5V5H10Z">
+
+    </path>
+    <path fill="#ffffff" d="M21 2.99902H14V4.99902H17.586L9.29297 13.292L10.707 14.706L19 6.41302V9.99902H21V2.99902Z">
+
+    </path>
+</svg>
+</div>
+</body>
+    <form style="z-index: 99999;" action="index.html">
+        <input class="hoverStyle" type="image"
+            src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
+    </form>
+    <div class="dragger">
+        <iframe style="margin-top: 25px; margin-right: auto; margin-left: auto;" frameborder="0" scrolling="no"
+            id="chat_embed" class="dragger" src="https://www.twitch.tv/embed/ShoXx__/chat?darkpopout" height="600"
+            width="950">
+        </iframe>
+    </div>
+
+</html>
