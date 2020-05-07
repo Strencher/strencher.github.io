@@ -35,7 +35,11 @@
     <title class="title">Chat</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
     </link>
-
+    <script>
+        function goToHome() {
+            location.href = "https://strencher.github.io";
+        }
+    </script>
 </head>
 <body bgcolor="#1A1919">
 <div onclick="popupOpen()">
@@ -49,10 +53,9 @@
 </svg>
 </div>
 </body>
-    <form style="z-index: 99999;" action="index.html">
-        <input class="hoverStyle" type="image"
-            src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
-    </form>
+    <button style="position: relative; top: -100px; background-color: transparent; border: none;" onclick="goToHome()">
+        <img src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png" alt="Home">
+    </button>
     <div class="dragger">
         <iframe style="margin-top: 25px; margin-right: auto; margin-left: auto;" frameborder="0" scrolling="no"
             id="chat_embed" class="dragger" src="https://www.twitch.tv/embed/ShoXx__/chat?darkpopout" height="600"
