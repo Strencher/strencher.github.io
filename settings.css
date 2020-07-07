@@ -1,0 +1,36 @@
+.container {
+    height: 50px;
+    background: linear-gradient(360deg, #000, gray);
+    margin-top: 25px;
+    border: 2px #000 solid;
+    border-radius: 4px;
+    width: 500px;
+    justify-content: center;
+    display: flex;
+    left: 50%;
+    position: relative;
+    flex-direction: row;
+    margin-left: -250px;
+}
+* {
+    font-family: Arial;
+}
+.textInput {
+    height: 15px;
+    position: relative;
+    background: #131313;
+    border-color: #000;
+    top: 13px;
+    color: white;
+    border-radius: 3px;
+}
+
+.chbx-wrapper {
+    position: absolute;
+    right: 10px;
+}
+.chbx-default {
+    position: absolute;
+    right: 10px;
+    filter: invert(23%) sepia(89%) saturate(0%) hue-rotate(257deg) brightness(101%) contrast(105%);
+}
