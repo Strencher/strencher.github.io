@@ -2,24 +2,94 @@
 <html lang="de">
 <head id="background">
 <meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
 <title class="title">Followers</title>
 <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
 </head>
 <body bgcolor=#262626 >
 <h2 style="color:#6441a5; text-decoration:underline" class="viewercard">Twitch Followers List</h2>
 <form action="index.html">
-<input type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
-<p id="demo"></p>
-<c id="demo2"></c>
+    <input type="image" src="https://raw.githubusercontent.com/Strencher/Strencher/master/32x32_(home).png">
 </form>
+<div class="container"></div>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .userName {
+        font-weight: bold;
+        color: white;
+    }
+    .code {
+        font-family: monospace;
+    }
+    .body {
+        display: inline-block;
+        margin: 10px;
+    }
 
+    .body * {
+        padding: 2px;
+    }
+
+    .userCard:nth-child(even) {
+        background: #333;
+    }
+
+    .userCard {
+        color: white;
+        border-radius: 4px;
+        padding: 15px;
+    }
+
+    .Icon {
+        width: 85px;
+        border-radius: 50%;
+        position: relative;
+        top: 5px;
+    }
+</style>
 <script>
-j = urllib2.urlopen('http://tmi.twitch.tv/group/user/strencher_/chatters')
-j_obj = json.load(j)
-u=j_obj['chatters']['viewers']
-for x in u:
-    print x
+    function formatString(string, options) {
+        for(const key in options) string = string.replace(new RegExp(`{{${key}}}`, "g"), options[key]);
+        return string;
+    }
+    const userhtml = `
+    <div class="userCard">
+        <img class="Icon" src="{{icon}}" />
+        <div class="body">
+            <div class="userName">{{username}}</div>
+            <div class="date">Folgt seit: {{followed}}</div>
+            <div class="date">Erstellt am: {{created}}</div>
+            <div class="code">Id: {{userId}}</div>
+        </div>
+    </div>
+    `;
+    const parseHTML = e => {
+        const dummy = document.createElement("div");
+        dummy.innerHTML = e;
+        return dummy.children.length == 1 ? dummy.children[0] : Array.from(dummy.children);
+    }
+    function refreshList() {
+        const container = document.querySelector(".container")
+        while(container.firstChild) container.firstChild.remove();
+        fetch("https://api.twitch.tv/kraken/channels/103495737/follows?client_id=eef5go90cx3q1yc0izyd0spfpeioxa&api_version=5")
+        .then(e => e.json())
+        .then(data => {
+            for(const user of data.follows) {
+                const string = formatString(userhtml, {
+                    icon: user.user.logo,
+                    username: user.user.display_name,
+                    followed: new Date(user.created_at).toLocaleString(),
+                    created: new Date(user.user.created_at).toLocaleString(),
+                    userId: user.user._id
+                });
+                const html = parseHTML(string);
+                container.appendChild(html);
+            }
+        })
+    }
+    refreshList();
+    setInterval(refreshList, 60000);
 </script>
 </body>
 </html>
