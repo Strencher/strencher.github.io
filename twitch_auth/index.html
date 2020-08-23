@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch Auth</title>
+    <!-- <script src="./index.js"></script> -->
+</head>
+<body>
+    <button style="margin: 500px;">test abackadjdnfjngk</button>
+    <style>
+        .tooltip::after {
+            content: " ";
+            position: absolute;
+            top: 98%;
+            transform: rotate(180deg);
+            left: 50%;
+            margin-left: -5px;
+            border-width: 6px;
+            border-style: solid;
+            border-color: transparent transparent #000000 !important;
+        }
+        .tooltip {
+            animation: slideIn ease-in-out .2s;
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+        .tooltip > span {
+            pointer-events: 0;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+            } 
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function renderTooltip(e, text) {
+            e.addEventListener("mouseenter", () => {
+                let tooltip = document.createElement("div");
+                let span = document.createElement("span");
+                span.innerHTML = text;
+                span.style.color = "rgb(204,204,204)";
+                span.style.margin = "7px";
+                tooltip.className = "tooltip";
+                tooltip.style.position = "fixed";
+                tooltip.style.pointerEvents = "none";
+                tooltip.style.backgroundColor = "black";
+                tooltip.appendChild(span);
+                document.body.appendChild(tooltip);
+                let pos_left = e.offsetLeft + (e.offsetWidth / 2) - (tooltip.offsetWidth / 2);
+                let pos_top = e.offsetTop - tooltip.offsetHeight - 7;
+                if(pos_left < 0) pos_left = e.offsetLeft + e.offsetWidth / 2 - 20;
+                if(pos_left + tooltip.offsetWidth > window.innerWidth) pos_left = e.offsetLeft - tooltip.offsetWidth + e.offsetWidth / 2 + 20;
+                if(pos_top < 0) pos_top = e.offsetTop + e.offsetHeight;
+                tooltip.style.left = pos_left + "px";
+                tooltip.style.top = pos_top + "px";
+                let mouseLeave = () => {
+                    tooltip.remove();
+                    e.removeEventListener("mouseleave", mouseLeave);
+                };
+                e.addEventListener("mouseleave", mouseLeave);
+            })
+        }
+        renderTooltip(document.querySelector("button"), "TEST abadfnwsjkgfnsejk")
+    </script>
+    <div aria-describedby="6bf2a2c80ebbba0cf57a09504451a3f6" class="tw-inline-flex tw-relative tw-tooltip-wrapper">
+        
+        <div class="tw-tooltip tw-tooltip--align-center tw-tooltip--up" data-a-target="tw-tooltip-label" role="tooltip" id="6bf2a2c80ebbba0cf57a09504451a3f6">Mod-Ansicht</div>
+    </div>
+</body>
+</html>

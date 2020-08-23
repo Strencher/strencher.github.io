@@ -1,0 +1,17 @@
+.head {
+    width: 500px;
+    padding: 17px;
+}
+.head {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    background-color: var(--background-primary);
+}
+.grid-1nZz7S {
+    height: 210px;
+}
+p {
+    margin: 0 !important;
+}

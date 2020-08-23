@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark platform-win app-focused">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://discordapp.com/assets/0.8c9797d2b9412aa963de.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <script>
+        window.$ = function(e) {return document.querySelector(e)};
+        document.getElementByAttribute = function(e, r) {
+            return $(`[${e}*="${r}"]`);
+        }
+        window.markdown = new showdown.Converter();
+        showdown
+            .setOption("underline", true)
+            .setOption("strikethrough", true)
+            .setOption("emoji", true)
+    </script>
+    <script src="./index.js"></script>
+</head>
+<body id="app-mount">
+    <div class="head">
+        <div class="input-2JOcvO marginBottom8-AtZOdT">
+            <h5 class="colorStandard-2KCXvj size14-e6ZScH h5-18_1nd title-3sZWYQ defaultMarginh5-2mL-bP">Titel für den embed</h5>
+            <div class="inputWrapper-31_8H8 da-inputWrapper">
+                <input class="title inputDefault-_djjkz input-cIJ7To" placeholder="Titel: " name="" type="text" maxlength="999" value="">
+            </div>
+        </div>
+        <div class="input-2JOcvO marginBottom8-AtZOdT">
+            <h5 class="colorStandard-2KCXvj size14-e6ZScH h5-18_1nd title-3sZWYQ defaultMarginh5-2mL-bP">Beschreibung für den embed</h5>
+            <div class="inputWrapper-31_8H8 da-inputWrapper">
+                <input class="desc inputDefault-_djjkz input-cIJ7To" placeholder="Beschreibung: " name="" type="text" maxlength="999" value="">
+            </div>
+        </div>
+        <div class="input-2JOcvO marginBottom8-AtZOdT">
+            <h5 class="colorStandard-2KCXvj size14-e6ZScH h5-18_1nd title-3sZWYQ defaultMarginh5-2mL-bP">Footer für den embed</h5>
+            <div class="inputWrapper-31_8H8 da-inputWrapper">
+                <input class="footer inputDefault-_djjkz input-cIJ7To" placeholder="Footer: " name="" type="text" maxlength="999" value="">
+            </div>
+        </div>
+        <div class="message-2qnXI6 cozyMessage-3V1Y8y groupStart-23k01U wrapper-2a6GCscozy-3raOZG zalgo-jN1Ica">
+            <div class="container-1ov-mD">
+                <div class="embedWrapper-lXpS3L embedFull-2tM8-- embed-IeVjo6 markup-2BOw-j" aria-hidden="false">
+                    <div class="grid-1nZz7S da-grid">
+                        <div con="title" class="embedTitle-3OXDkz embedMargin-UO5XwE">Heute ist <strong>streamfrei!</strong></div>
+                        <div class="embedFields-2IPs5Z">
+                            <div class="embedField-1v-Pnh" style="grid-column: 1 / 13;">
+                                <div con="desc" class="embedFieldName-NFrena">Der nächste Stream findet wie gewohnt morgen statt.</div>
+                                <div con="footer" class="embedFieldValue-nELq2s">Wir wünschen euch einen schönen Tag. <img aria-label=":heart:" src="https://ptb.discordapp.com/assets/0483f2b648dcc986d01385062052ae1c.svg" alt=":heart:" draggable="false" class="emoji"></div>
+                            </div>
+                        </div>
+                        <div class="embedFooter-3yVop- embedMargin-UO5XwE">
+                            <span con="timestamp" class="embedFooterText-28V_Wb da-embedFooterText">24.7.2020, 20:35:36</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </div>
+</body>
+</html>
