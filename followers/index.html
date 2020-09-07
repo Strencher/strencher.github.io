@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head id="background">
+    <meta name="viewport" content="width=400, initial-scale=1.0">
 <meta charset="utf-8">
 <title class="title">Followers</title>
 <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
@@ -12,6 +13,9 @@
 </form>
 <div class="container"></div>
 <style>
+    body[platform="false"] {
+        max-width: 400px;
+    }
     * {
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -49,6 +53,7 @@
     }
 </style>
 <script>
+    document.body.setAttribute('platform', navigator.platform.includes("Win"));
     function formatString(string, options) {
         for(const key in options) string = string.replace(new RegExp(`{{${key}}}`, "g"), options[key]);
         return string;
