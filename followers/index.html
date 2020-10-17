@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head id="background">
+    <meta name="viewport" content="width=400, initial-scale=1.0">
 <meta charset="utf-8">
 <title class="title">Followers</title>
 <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Strencher/Strencher/master/favoicon.png">
@@ -12,6 +13,9 @@
 </form>
 <div class="container"></div>
 <style>
+    body[platform="false"] {
+        max-width: 400px;
+    }
     * {
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -49,6 +53,33 @@
     }
 </style>
 <script>
+    document.body.setAttribute('platform', navigator.platform.includes("Win"));
+    function timeSince(date) {
+        var seconds = Math.floor((new Date() - date) / 1000);
+
+        var interval = seconds / 31536000;
+
+        if (interval > 1) {
+            return Math.floor(interval) + " Jahre";
+        }
+        interval = seconds / 2592000;
+        if (interval > 1) {
+            return Math.floor(interval) + " Monate";
+        }
+        interval = seconds / 86400;
+        if (interval > 1) {
+            return Math.floor(interval) + " Tage";
+        }
+        interval = seconds / 3600;
+        if (interval > 1) {
+            return Math.floor(interval) + " Stunden";
+        }
+        interval = seconds / 60;
+        if (interval > 1) {
+            return Math.floor(interval) + " Minuten";
+        }
+        return Math.floor(seconds) + " Sekunden";
+    }
     function formatString(string, options) {
         for(const key in options) string = string.replace(new RegExp(`{{${key}}}`, "g"), options[key]);
         return string;
@@ -58,8 +89,9 @@
         <img class="Icon" src="{{icon}}" />
         <div class="body">
             <div class="userName">{{username}}</div>
-            <div class="date">Folgt seit: {{followed}}</div>
+            <div class="date">Gefolgt am: {{followed}}</div>
             <div class="date">Erstellt am: {{created}}</div>
+            <div class="date">Folgt seit: {{since}}</div>
             <div class="code">Id: {{userId}}</div>
         </div>
     </div>
@@ -72,7 +104,7 @@
     function refreshList() {
         const container = document.querySelector(".container")
         while(container.firstChild) container.firstChild.remove();
-        fetch("https://api.twitch.tv/kraken/channels/103495737/follows?client_id=eef5go90cx3q1yc0izyd0spfpeioxa&api_version=5")
+        fetch("https://api.twitch.tv/kraken/channels/103495737/follows?client_id=eef5go90cx3q1yc0izyd0spfpeioxa&api_version=5&limit=100")
         .then(e => e.json())
         .then(data => {
             for(const user of data.follows) {
@@ -81,7 +113,8 @@
                     username: user.user.display_name,
                     followed: new Date(user.created_at).toLocaleString(),
                     created: new Date(user.user.created_at).toLocaleString(),
-                    userId: user.user._id
+                    userId: user.user._id,
+                    since: timeSince(new Date(user.created_at))
                 });
                 const html = parseHTML(string);
                 container.appendChild(html);
