@@ -13,7 +13,7 @@
     </div>
     <script>
         (() => {
-            var all = new URLSearchParams(location.search);
+            var all = new URLSearchParams(location.href);
             var params = {};
             all.forEach((value, key) => {
                 params[key.split('#').slice(-1)[0]] = value;
