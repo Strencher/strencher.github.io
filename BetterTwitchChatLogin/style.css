@@ -1,0 +1,18 @@
+body {
+    background: #111;
+}
+.title {
+    text-align:  center;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+}
+#tokenInput {
+    background: #222;
+    color: #ddd;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.hidden {
+    display: none;
+}

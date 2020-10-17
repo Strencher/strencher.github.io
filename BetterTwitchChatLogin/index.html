@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BetterTwitchChatLogin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <textarea class="hidden" cols="30" rows="10"></textarea>
+    <div class="app">
+        <h1 class="title">BetterTwitchChat - Login</h1>
+        <button id="tokenInput" cols="30" rows="10">Login Info Loading...</button>
+    </div>
+    <script>
+        (() => {
+            var all = new URLSearchParams(location.search);
+            var params = {};
+            all.forEach((value, key) => {
+                params[key.split('#').slice(-1)[0]] = value;
+            })
+            window.params = params;
+        })();
+        window.copyText = e => {
+            var el = document.querySelector('.hidden');
+            if(!el) return;
+            el.innerText = e;
+            el.select();
+            document.execCommand('copy');
+        };
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
