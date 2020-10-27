@@ -95,6 +95,7 @@
         </div>
     </div>
     `;
+    var lastStates;
     const parseHTML = e => {
         const dummy = document.createElement("div");
         dummy.innerHTML = e;
@@ -106,6 +107,8 @@
         fetch("https://api.twitch.tv/kraken/channels/103495737/follows?client_id=eef5go90cx3q1yc0izyd0spfpeioxa&api_version=5&limit=100")
         .then(e => e.json())
         .then(data => {
+            if(data === lastStates) return; //don't refresh if there is no difference
+            lastStates = data;
             for(const user of data.follows) {
                 const string = formatString(userhtml, {
                     icon: user.user.logo,
