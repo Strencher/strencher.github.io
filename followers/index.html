@@ -91,7 +91,6 @@
             <div class="userName">{{username}}</div>
             <div class="date">Gefolgt am: {{followed}}</div>
             <div class="date">Erstellt am: {{created}}</div>
-            <div class="date">Folgt seit: {{since}}</div>
             <div class="code">Id: {{userId}}</div>
         </div>
     </div>
@@ -111,10 +110,10 @@
                 const string = formatString(userhtml, {
                     icon: user.user.logo,
                     username: user.user.display_name,
-                    followed: new Date(user.created_at).toLocaleString(),
-                    created: new Date(user.user.created_at).toLocaleString(),
+                    followed: `${new Date(user.created_at).toLocaleString()}, ${timeSince(new Date(user.created_at))}`,
+                    created: `${new Date(user.user.created_at).toLocaleString()}, ${timeSince(new Date(user.user.created_at))}`,
                     userId: user.user._id,
-                    since: timeSince(new Date(user.created_at))
+                    //since: timeSince(new Date(user.created_at))
                 });
                 const html = parseHTML(string);
                 container.appendChild(html);
