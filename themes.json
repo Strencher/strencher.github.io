@@ -1,67 +1,338 @@
 [
-	"740930459210481765",
-	"725043620561813635",
-	"705922571161436260",
-	"705493814323707985",
-	"702516570508886046",
-	"699145763221012521",
-	"689335719646593033",
-	"686164636797501490",
-	"675639692816941072",
-	"674767428625891381",
-	"653461628074852402",
-	"644109622671573002",
-	"626559883344609291",
-	"604960970716217345",
-	"604202551839162398",
-	"567802391630708758",
-	"566896774476726282",
-	"561513362031116309",
-	"559684659508674561",
-	"547389051066646538",
-	"546827574920347663",
-	"544843473438638100",
-	"544455557537595392",
-	"539710182578716703",
-	"539683403709022208",
-	"536772750870577175",
-	"536121927975174145",
-	"535491452147597312",
-	"534495295594037258",
-	"534461399309484052",
-	"528164376667226128",
-	"526810763739004928",
-	"524803843482058752",
-	"520549365715304448",
-	"518669839338962954",
-	"514924715513610291",
-	"505940383235178497",
-	"504472866532884480",
-	"504425022354620426",
-	"499657958024806407",
-	"491136267325800449",
-	"482671742943363093",
-	"482618390108962827",
-	"481922744007524353",
-	"480165013462712322",
-	"474525985727840306",
-	"472125257055207446",
-	"471787644192423946",
-	"470301107264946196",
-	"461580306496094209",
-	"457354206777573377",
-	"457353768753954816",
-	"450282848440549377",
-	"443948290015494145",
-	"427902986270932995",
-	"420102182566756362",
-	"403905322529325056",
-	"384884735849136128",
-	"383602130746867713",
-	"357238979340271628",
-	"357238528280887299",
-	"357238297015353345",
-	"357237786514030613",
-	"357237368962547712",
-	"357236795722694666"
+    {
+        "name": "Adjustable Server Width",
+        "author": "Gibbu",
+        "description": "Make the server list smaller or larger. Customizable in the theme file.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "An Orion Deep Field",
+        "author": "NFLD99",
+        "description": "An Orion Deep Field",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Anti Lag",
+        "author": "NFLD99",
+        "description": "Anti Lag",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "BasicBackground",
+        "author": "DevilBro",
+        "description": "Allows you to use a background image in Discord without greatly altering the basic look of Discord. You can easily swap the background picture, set an accent color and change the overall transparency (darkness).",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Black Hole",
+        "author": "MonsterDev",
+        "description": "A dark theme that is littered with stars",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Blurple Recolor",
+        "author": "DevilBro",
+        "description": "Replaces Discords native blurple with your own color, change color in theme file.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Boku No Hero Academia",
+        "author": "DevilsLynAvenged",
+        "description": "Boku No Hero Academia",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "BorderShapes",
+        "author": "JayWilson",
+        "description": "Custom border shapes for elements. Visit my [GitHub Repository](https://github.com/JayWilson7/BorderShapes) for more information. Join my [Support Server](https://discord.gg/jcDvkVk) if you need help!",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Bubbles",
+        "author": "DevilsLynAvenged",
+        "description": "Bubbles",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Calm and Clean Streets",
+        "author": "DevilsLynAvenged",
+        "description": "Just a peaceful, calm and clean streets that someone can easily walk on",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "ClearVision",
+        "author": "ClearVision",
+        "description": "Highly customizable theme for BetterDiscord, including coloring, background images, blur percentages, font changing, and more.\n\nOfficial presets, as well as a customization guide are available in the support Discord server.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Discord Chat Revert",
+        "author": "fluffy",
+        "description": "Reverts Discord's chat design to the prior design. Supports both compact and cozy options.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Dusk to Dawn",
+        "author": "Asteria",
+        "description": "Simplistic Dark Mode Theme",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Dyslexia",
+        "author": "Qwerasd",
+        "description": "Makes changes to the font and layout to help dyslexics use Discord.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Earth",
+        "author": "NFLD99",
+        "description": "Earth",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Elysia",
+        "author": "PurpleWizard",
+        "description": "An amazing RGB theme with full customization included. Designed for both Light and Dark themes.\n\nTheme editor/generator ~ https://goldenlys.github.io/ThemeGen (You can also edit the theme file with a text editor)\n\nMore themes presets are available on my support server, join us if you encounter any problem with this theme (or if you wanna share your configs) \nSupport Server ~ https://discord.gg/SBuYeHh",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Frosted",
+        "author": "NFLD99",
+        "description": "Frosted",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Frosted Glass",
+        "author": "Gibbu",
+        "description": "Display your picture of choice with adjustable blur and brightness via variables in the theme file. Discord Dark theme is required.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Frosted Rainbow",
+        "author": "NFLD99",
+        "description": "Frosted Rainbow",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Great Mountain Site",
+        "author": "DevilsLynAvenged",
+        "description": "The great mountain site with a great view of the moon in front of it",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Halloween",
+        "author": "NFLD99",
+        "description": "Halloween",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Horizontal Server List",
+        "author": "Gibbu",
+        "description": "Moves the server list from the left to the top of Discord. Compatible with Server Folders and most basic transparent themes.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Kemono Friends",
+        "author": "DevilsLynAvenged",
+        "description": "Kemono Friends",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Material Discord",
+        "author": "CapnKitten",
+        "description": "A theme based on Google's Material Design",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Metro For Discord",
+        "author": "Tako",
+        "description": "A custom theme for Discord based on Microsoft's Modern Design Language - 'Metro'.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Midnight UI",
+        "author": "Tropical",
+        "description": "A clean, dark, and modern user interface for DiscordApp. Fully customizable through the theme file.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "MinimalCord",
+        "author": "Gibbu",
+        "description": "Changes Discord enough to give it a fresh feel while also making it darker. Supports both Light and Dark themes.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "MinimalImprovement",
+        "author": "Juicysteak117",
+        "description": "Minimize the wasted space in order to maximize the usable area, while still keeping the feel of basic Discord.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Mitsuki",
+        "author": "NFLD99",
+        "description": "Mitsuki",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Neutron",
+        "author": "Spectra",
+        "description": "A simple but highly customizable theme, now sugar free!",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "NieR Automata UI Theme",
+        "author": "AccraZed",
+        "description": "Warm beige theme with minimal animations. Meant to resemble NieR: Automata's UI as accurately as possible\n\nIf you have any issues, JOIN SUPPORT DISCORD HERE TY https://discord.gg/X4nBPCa",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "No Game No Life",
+        "author": "DevilsLynAvenged",
+        "description": "No Game No Life",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Nocturnal",
+        "author": "Spectra",
+        "description": "A simple & clean dark theme for thoses who live at night, made to be easy on the eye.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "NotAnotherAnimeTheme",
+        "author": "Puckzxz",
+        "description": "A easily customizable and automatically updating theme.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Nox",
+        "author": "Zerebos",
+        "description": "A beautiful dark material theme loosely based on Google Material Design guidelines. (Formerly Beard's Material Theme by Lilian Tedone)",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "One Up",
+        "author": "NFLD99",
+        "description": "One Up",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Portals",
+        "author": "NFLD99",
+        "description": "Portals",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "RadialStatus",
+        "author": "Gibbu",
+        "description": "Changes the status icons to wrap around the avatar. Shape can be changed inside the theme file.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Ram",
+        "author": "DevilsLynAvenged",
+        "description": "Ram",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Reborn",
+        "author": "MonsterDev",
+        "description": "Transparent, fully customizable theme",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "RednBlack",
+        "author": "DarkKillerXL",
+        "description": "A red and black coloured theme for Discord. The colours and background are customizable, if you need support, want to suggest a feature/plugin to be supported or want to report a bug, check out the [Support Server](https://discord.gg/nrTqgTN \"DarkKillerXL Support Server\").",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Rem",
+        "author": "DevilsLynAvenged",
+        "description": "Rem",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Retro",
+        "author": "NFLD99",
+        "description": "Retro",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Scratched Up",
+        "author": "NFLD99",
+        "description": "Scratched Up",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Server Columns",
+        "author": "DevilBro",
+        "description": "Changes the Server List to a gridlike container to allow servers to be displayed in columns. Amount of columns can be set in the .theme.css file.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "SimplyDark",
+        "author": "Gibbu",
+        "description": "Makes Discord sharp and simple.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Skrillex",
+        "author": "NFLD99",
+        "description": "Skrillex",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Slate",
+        "author": "GibbuTropical",
+        "description": "An optimized, consistent, and functional theme for Discord based on GitHub's design language.\n\nhttps://github.com/DiscordStyles/Slate",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Spotify Discord",
+        "author": "CapnKitten",
+        "description": "Combine Discord and Spotify into one.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Sunset",
+        "author": "DevilsLynAvenged",
+        "description": "Sunset",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Super Mario World",
+        "author": "NFLD99",
+        "description": "Super Mario World",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Tranquil",
+        "author": "MonsterDev",
+        "description": "A primarily flat dark theme with multiple addons. [Support light theme as well -- makes you go blind]",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Transient Material",
+        "author": "Zerebos",
+        "description": "Transparency patch theme for Beard's Material Design Theme. Also works fairly well on it's own.\n\nAll variables:\n\n - `--tm-accent` - This is the accent color you use for Beard's but in RGB format. You can get that here: http://www.javascripter.net/faq/hextorgb.htm\n - `--tm-titlebar-opacity` - Controls the opacity for the titlebar. Can range from 0.0 to 1.0.\n - `--tm-guilds-opacity` - Controls the opacity for the guilds column. Can range from 0.0 to 1.0.\n - `--tm-messages-opacity` - Controls the opacity for the messages (chat bubbles). Can range from 0.0 to 1.0.\n - `--tm-chat-opacity` - Controls the opacity for the chat background. Can range from 0.0 to 1.0.\n - `--tm-chatbox-opacity` - Controls the opacity for the chatbox where you type. Can range from 0.0 to 1.0.\n - `--tm-memberlist-opacity` - Controls the opacity for the memberlist. Can range from 0.0 to 1.0.\n - `--tm-channels-opacity` - Controls the opacity for the channels and DM lists. Can range from 0.0 to 1.0.\n - `--tm-modal-opacity` - Controls the opacity for the modals. Can range from 0.0 to 1.0.\n - `--tm-popout-opacity` - Controls the opacity for the popouts. Can range from 0.0 to 1.0.\n - `--tm-selected-item` - This is the color for selected items such as selected channel and server. Also acts as hover for friends list.\n - `--tm-hover` - Color for hovering over most items like channels and server.\n - `--tm-active` - Color that shows during clicking on an item like channel or server.\n - `--tm-solo` - Set this to 0 to be used with Beard's theme (default) or 1 to use it on its own.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Translucence",
+        "author": "CapnKitten",
+        "description": "A translucent/frosted glass Discord theme.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Winter",
+        "author": "DevilsLynAvenged",
+        "description": "Winter",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Wonderful and Green Forest",
+        "author": "DevilsLynAvenged",
+        "description": "Explore the Green Forest with wonderful leaves on the trees",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    }
 ]
