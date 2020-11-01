@@ -1,121 +1,470 @@
 [
-	"754736103868858409",
-	"751419636423065692",
-	"749182681631424595",
-	"748123682408366080",
-	"743815452207349883",
-	"742719609580552196",
-	"741992573802905631",
-	"740939362577023077",
-	"734425594346995782",
-	"707522726851641355",
-	"707134517063843860",
-	"706139871789449248",
-	"699658422408445983",
-	"697265688103878756",
-	"697262946241347636",
-	"681197716650328174",
-	"677250765026492417",
-	"674709870267596823",
-	"674183443055247360",
-	"674156576046841856",
-	"668737272262295564",
-	"668647155011026954",
-	"646885935031648256",
-	"618046749138747393",
-	"602758358906306657",
-	"590278755637919753",
-	"571064029305503756",
-	"553342022623428608",
-	"547708868113989644",
-	"541254173149233153",
-	"540859056722673685",
-	"536417945975259136",
-	"532528701540270081",
-	"530771733263679499",
-	"525358133015740417",
-	"522121963414749185",
-	"516497669053480967",
-	"515559300358471697",
-	"481993295073902602",
-	"477927848976580658",
-	"475907516627288074",
-	"469753298208030733",
-	"461722828870516747",
-	"460601748047003648",
-	"460601604211474444",
-	"460195901848420382",
-	"460104673693663242",
-	"458404467445071873",
-	"456994025782771734",
-	"447773468646178818",
-	"443028310470033408",
-	"441960703876923395",
-	"439961751178444821",
-	"434514891613667358",
-	"433863663246376972",
-	"433481192835383316",
-	"433347402682859540",
-	"431471958136324106",
-	"430908836849778689",
-	"428574783181946890",
-	"428574726869352492",
-	"426064765073227796",
-	"425774939401093120",
-	"424943749471404032",
-	"423624340861485056",
-	"419861405483794432",
-	"417810904722309132",
-	"415993742537916429",
-	"409444207581986818",
-	"408656258133000203",
-	"407177337134907393",
-	"405425423535702018",
-	"404148860881993739",
-	"400344309435596811",
-	"400343082928963584",
-	"399980455509753856",
-	"398197087986253844",
-	"395393062471204875",
-	"394627942136938496",
-	"392170675013419013",
-	"391810644493729792",
-	"391391910444531712",
-	"388419188731019264",
-	"387655362611904515",
-	"387585764927602688",
-	"385910157617659915",
-	"385902463926009857",
-	"385746152353562624",
-	"383333796919115777",
-	"382128975339585537",
-	"379701512286240768",
-	"377938938255376385",
-	"374266512430596107",
-	"374244003371155456",
-	"373968626430115850",
-	"373321899012521984",
-	"373029294504411136",
-	"369901921819164672",
-	"369453188715249667",
-	"368704728088969216",
-	"367995446322266113",
-	"367710731686379520",
-	"365524782805942273",
-	"365521417162326027",
-	"365520965167480843",
-	"365504428611993600",
-	"364535298170028033",
-	"364490147917594625",
-	"364478876094824448",
-	"362978810066501632",
-	"362506099926237184",
-	"362195121892098050",
-	"361986653935370260",
-	"360404771758407680",
-	"358189840937779200",
-	"357241838039465985",
-	"357241285809012746",
-	"357240817339072523",
-	"338600376435605504"
+    {
+        "name": "AccountDetailsPlus",
+        "author": "Zerebos",
+        "description": "Lets you view popout, nickname and more from your account panel at the bottom.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "AlwaysMentionEveryone",
+        "author": "Lucario",
+        "description": "Removes* the confirmation prompt when mentioning everyone in a large server.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "AutoPlayGifs",
+        "author": "Zerebos",
+        "description": "Automatically plays animated avatars, emojis, gifs and more.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "AutoStartRichPresence",
+        "author": "Lucario",
+        "description": "Allows you to auto start Rich Presence when you start Discord, with configurable text and images.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Badges Everywhere",
+        "author": "DevilBro",
+        "description": "Displays Badges (Nitro, Hypesquad, etc...) in the chat/memberlist/userpopout.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "BDContextMenu",
+        "author": "Zerebos",
+        "description": "Adds BD shortcuts to the settings context menu.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Better Friend List",
+        "author": "DevilBro",
+        "description": "Adds extra controls to the friends page, like sort by name/status, search and all/request/blocked amount.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "BetterFolders",
+        "author": "Zerthox",
+        "description": "Add new functionality to server folders.\n\nCurrent Features:\n- Custom Folder Icons\n- Close other folders on open",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "BetterFormattingRedux",
+        "author": "Zerebos",
+        "description": "Lets you format your messages with buttons and adds more formatting options.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "BetterReplyer",
+        "author": "Zerthox",
+        "description": "Reply to people using their ID with a button. Inspired by Replyer by Hammmock#3110, @Natsulus#0001 & @Zerebos#7790.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "BetterRoleColors",
+        "author": "Zerebos",
+        "description": "Adds server-based role colors to typing, voice, popouts, modals and more! This can take the place of ColoredVoice/Typing!",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "BlurNSFW",
+        "author": "Zerebos",
+        "description": "Blurs images in NSFW channels until you hover over it. ",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "ChannelTabs",
+        "author": "l0c4lh057",
+        "description": "Adds tabs to discord, just like in a normal web browser. Also lets you add bookmarks for certain channels.\n\n**Info:** It seems like discord tells some people to claim their account after enabling the plugin, I have no clue why but will look into it. Just ignore that message, everything should be ok if you do.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Char Counter",
+        "author": "DevilBro",
+        "description": "Adds a character counter to your textarea, which also displays the amount of selected characters when you select something in the textarea.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Complete Timestamps",
+        "author": "DevilBro",
+        "description": "Replace all timestamps with complete timestamps.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Copy Raw Message",
+        "author": "DevilBro",
+        "description": "Adds a entry in the contextmenu when you right click a message that allows you to copy the raw contents of a message.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Creation Date",
+        "author": "DevilBro",
+        "description": "Displays the Creation Date of an Account in the UserPopout and UserModal.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Custom Quoter",
+        "author": "DevilBro",
+        "description": "Let's you customize the output of the native quote feature of Discord.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "DiscordCakeDay",
+        "author": "Lucario",
+        "description": "Displays a cake next to the username of anyone whose account is having a Discord birthday! (Currently only displays in chat and member list).",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Display Servers As Channels",
+        "author": "DevilBro",
+        "description": "Display servers in a similar way as channels.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "DoNotTrack",
+        "author": "Zerebos",
+        "description": "Stops Discord from tracking everything you do like Sentry and Analytics.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Edit Uploads",
+        "author": "Qwerasd",
+        "description": "Provides an edit button on the upload modal which allows you to edit images before uploading them.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Edit Users",
+        "author": "DevilBro",
+        "description": "Based on Renamer. Allows you to change the icon, name, tag and color of users.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "EmojiUtilities",
+        "author": "Zerebos",
+        "description": "Allows you to blacklist and favorite emojis through the context menu. Favorites and Blacklisted show up as sections in the emoji picker and all emojis in the picker get a context menu to blacklist or favorite them.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "EmoteSearch",
+        "author": "Zerebos",
+        "description": "Search through all emotes in BD with `/es uremotesearch`",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Emulator",
+        "author": "Zerthox",
+        "description": "Emulate Windows, MacOS, Linux or Browser on any platform.  **WARNING**: Emulating a different platform may cause unwanted side effects. Use at own risk.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Force Image Preview",
+        "author": "DevilBro",
+        "description": "Locally forces embedded Image Previews, if Discord doesn't do it itself.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Friend Notifications",
+        "author": "DevilBro",
+        "description": "Notifies you when a friend either logs in or out. Click the Online Friend-Counter to display a timelog of the current session.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Game Activity Toggle",
+        "author": "Egrodo",
+        "description": "Simple plugin that adds a \"Display Game Activity\" button on the main toolbar so you can toggle it easier. For when you don't want your friends knowing that you're playing games, but quickly.\n\nThis plugin only works on Discord versions 0.0.306 and higher, if it doesn't load please make sure your Discord is updated to the latest version.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Google Translate Option",
+        "author": "DevilBro",
+        "description": "Adds a Google Translate option to your context menu, which shows a preview of the translated text and on click will open the selected text in Google Translate. Also adds a translation button to your textareas, which will automatically translate the text for you before it is being sent.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Hide Channels",
+        "author": "CapnKitten",
+        "description": "Allows you to hide the channels list in servers and DMs",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "HideDisabledEmojis",
+        "author": "Zerebos",
+        "description": "Hides disabled emojis from the emoji picker. Useful for non-nitro users.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "HideIconBadge",
+        "author": "Zerebos",
+        "description": "Hides the badge that appears on the taskbar icon.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "HideMutedServers",
+        "author": "Zerebos",
+        "description": "Hides muted servers with a context menu option to show/hide. Acts similar to Discord's Hide Muted Channels option.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Image Utilities",
+        "author": "DevilBro",
+        "description": "Adds a handful of options for images/emotes/avatars (direct download, reverse image search, zoom, copy image link, copy image to clipboard, gallery mode).",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "ImageToClipboard",
+        "author": "Zerebos",
+        "description": "Allows you to copy images (png/jpg) directly to your system clipboard. You can do this through the modal or through the context menu.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Joined At Date",
+        "author": "DevilBro",
+        "description": "Displays the Joined At Date for the current Server of a Member in the UserPopout and UserModal.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Last Message Date",
+        "author": "DevilBro",
+        "description": "Displays the Date of the last sent Message of a Member for the current Server/DM in the UserPopout and UserModal.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "LinkChannels",
+        "author": "Strencher",
+        "description": "Adds an Icon to channels that copys <#channelId>. Press Shift & Click to insert the channel in the textarea.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "MemberCount",
+        "author": "Arashiryuu",
+        "description": "Displays the total number of members in a guild at the top of the members-list.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Message Utilities",
+        "author": "DevilBro",
+        "description": "Offers a number of useful message options (quick edit, quick delete, etc.). Remap the keybindings in the settings.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "MessageTimestampsRedux",
+        "author": "Arashiryuu",
+        "description": "Allows you to see a proper timestamp for a message. Simply right-click a message, then click 'Show Timestamp'",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Minespoiler",
+        "author": "l0c4lh057",
+        "description": "Send a game of Minesweeper to your loved ones. Usage: Send a message with the content \"minesweeper:(width) (height) (bombCount)\" (without brackets and without quotes)",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "MobileForAll",
+        "author": "Lucario",
+        "description": "Adds a mobile indicator for all status types, including Idle and Do Not Disturb. Only works in the guild member list for now.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Moveable Popups",
+        "author": "DevilBro",
+        "description": "Adds the feature to move all popups and modals around like on a normal desktop. Ctrl + drag with your left mousebutton to drag element.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Old Title Bar",
+        "author": "DevilBro",
+        "description": "Reverts the title bar back to its former self.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "OnlineFriendCount",
+        "author": "Zerthox",
+        "description": "Add the old online friend count back to guild list. Because nostalgia.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Open Spotify Links In Spotify",
+        "author": "Strencher",
+        "description": "Opens Spotify Links Direktly in Spotify.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Owner Tag",
+        "author": "DevilBro",
+        "description": "Adds a Tag like Bottags to the Serverowner.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "PermissionsViewer",
+        "author": "Zerebos",
+        "description": "Allows you to view a users permissions.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Personal Pins",
+        "author": "DevilBro",
+        "description": "Allows you to pin messages in your own personal notebook. Similar to pins you can check the notes of the current channel via the controlbar on the top.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Pin DMs",
+        "author": "DevilBro",
+        "description": "Allows you to pin DMs, making them appear at the top of your DMs/Guild-list.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Quick Mention",
+        "author": "DevilBro",
+        "description": "Adds a mention entry to the message option toolbar.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Quick Mute Channels",
+        "author": "Strencher",
+        "description": "Adds a Speaker to channels to Quickly mute/unmute them.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Remove Blocked Messages",
+        "author": "DevilBro",
+        "description": "Removes blocked messages completely.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Remove Nicknames",
+        "author": "DevilBro",
+        "description": "Replace all nicknames with the actual account names.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "RemoveMinimumSize",
+        "author": "Zerebos",
+        "description": "Removes the minimum window size forced by Discord.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "ResizableCSS",
+        "author": "Zerebos",
+        "description": "Allows you to resize the detached CustomCSS window. Useful for development and customization.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Reveal All Spoilers Option",
+        "author": "DevilBro",
+        "description": "Adds an entry to the message contextmenu to reveal all spoilers within a messageblock.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "RoleMembers",
+        "author": "Zerebos",
+        "description": "Allows you to see the members of each role on a server. Can also see members from a mention.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Send Large Messages",
+        "author": "DevilBro",
+        "description": "Opens a popout when your message is too large, which allows you to automatically send the message in several smaller messages.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "SendButton",
+        "author": "Zerebos",
+        "description": "Adds a send button to channels where you have the permission to send messages. ",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Server Counter",
+        "author": "DevilBro",
+        "description": "Adds a server counter to the server list.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Server Details",
+        "author": "DevilBro",
+        "description": "Shows details of a server when you hover over the icon in the server list.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Server Folders",
+        "author": "DevilBro",
+        "description": "Adds the feature to create folders to organize your servers.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "ServerSearch",
+        "author": "Zerebos",
+        "description": "Adds a button to search your servers. Search in place or in popout.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Show Hidden Channels",
+        "author": "DevilBro",
+        "description": "Displays all hidden channels that can't be accessed due to role restrictions in a new category.  \n***NOTE**: This is only a visual addon and won't gain you access to restricted channels.*",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "ShowAllActivities",
+        "author": "Strencher",
+        "description": "See every status a user has enabled. Original made by Juby210#0577.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Spell Check",
+        "author": "DevilBro",
+        "description": "Adds a spellcheck to all textareas. Select a word inside the textarea and rightclick it to add it to your dictionary.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "StatusEverywhere",
+        "author": "Zerebos",
+        "description": "Adds user status everywhere Discord doesn't.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Steam Profile Link",
+        "author": "DevilBro",
+        "description": "Opens any Steam links in Steam instead of your internet browser.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Timed Light Theme Mode",
+        "author": "DevilBro",
+        "description": "Allows you to automatically change light/dark mode depending on the time of day. Slider is added to the 'Appearance' settings.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Top Roles Everywhere",
+        "author": "DevilBro",
+        "description": "Adds the highest role of a user as a tag. Style can be changed through the plugin settings.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "TypingIndicator",
+        "author": "l0c4lh057",
+        "description": "Shows a typing indicator in the channel and guild list when someone is typing in it.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "VoiceEvents",
+        "author": "Zerthox",
+        "description": "Adds TTS Event Notifications to your selected Voice Channel. Teamspeak feeling.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "VoiceUsersCounter",
+        "author": "Strencher",
+        "description": "Adds a count of users theyre connected to a VoiceChannel. Customize the Color of the count in the SettingsPanel.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "Word Notifications",
+        "author": "Qwerasd",
+        "description": "Get notifications when certain words are said.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    },
+    {
+        "name": "ZeresPluginLibrary",
+        "author": "Zerebos",
+        "description": "Adds a set of utilities for plugins to use. Some plugins require this plugin and will alert you when they do.",
+        "download": "https://betterdiscord.net/ghdl?id=1268"
+    }
 ]
