@@ -91,11 +91,11 @@
             <div class="userName">{{username}}</div>
             <div class="date">Gefolgt am: {{followed}}</div>
             <div class="date">Erstellt am: {{created}}</div>
-            <div class="date">Folgt seit: {{since}}</div>
             <div class="code">Id: {{userId}}</div>
         </div>
     </div>
     `;
+    var lastStates;
     const parseHTML = e => {
         const dummy = document.createElement("div");
         dummy.innerHTML = e;
@@ -107,14 +107,16 @@
         fetch("https://api.twitch.tv/kraken/channels/103495737/follows?client_id=eef5go90cx3q1yc0izyd0spfpeioxa&api_version=5&limit=100")
         .then(e => e.json())
         .then(data => {
+            if(data === lastStates) return; //don't refresh if there is no difference
+            lastStates = data;
             for(const user of data.follows) {
                 const string = formatString(userhtml, {
                     icon: user.user.logo,
                     username: user.user.display_name,
-                    followed: new Date(user.created_at).toLocaleString(),
-                    created: new Date(user.user.created_at).toLocaleString(),
+                    followed: `${new Date(user.created_at).toLocaleString()}, ${timeSince(new Date(user.created_at))}`,
+                    created: `${new Date(user.user.created_at).toLocaleString()}, ${timeSince(new Date(user.user.created_at))}`,
                     userId: user.user._id,
-                    since: timeSince(new Date(user.created_at))
+                    //since: timeSince(new Date(user.created_at))
                 });
                 const html = parseHTML(string);
                 container.appendChild(html);
