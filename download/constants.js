@@ -26,7 +26,10 @@ export const plugins = [
   'TwitchChatV2',
   'UserDetails',
   'VoiceChatNotifications',
-  'VoiceUsersCounter'
+  'VoiceUsersCounter',
+  'MemberCount',
+  'StatusEverywhere',
+  'UnreadCountBadges'
 ];
 
 export const themes = [
