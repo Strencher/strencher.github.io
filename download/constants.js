@@ -29,7 +29,8 @@ export const plugins = [
   'VoiceUsersCounter',
   'MemberCount',
   'StatusEverywhere',
-  'UnreadCountBadges'
+  'UnreadCountBadges',
+  'CharCounter'
 ];
 
 export const themes = [
