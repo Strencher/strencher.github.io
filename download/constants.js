@@ -30,7 +30,8 @@ export const plugins = [
   'MemberCount',
   'StatusEverywhere',
   'UnreadCountBadges',
-  'CharCounter'
+  'CharCounter',
+  'PinDirectMessages'
 ];
 
 export const themes = [
