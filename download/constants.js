@@ -7,9 +7,11 @@ export const plugins = [
   'AutoCorrectV2',
   'BetterBannedUsers',
   'BetterQuoter',
+  'CharCounter',
   'Copier',
   'InvisibleTyping',
   'LinkChannels',
+  'MemberCount',
   'MessageDoubleClickActions',
   'MessageLinkEmbed',
   'OpenLinksInDiscordV2',
@@ -22,16 +24,15 @@ export const plugins = [
   'RelationshipCounter',
   'ShowAllActivities',
   'ShutUpClyde',
+  'StatusEverywhere',
   'SuppressReplyMentions',
   'TwitchChatV2',
   'UserDetails',
   'VoiceChatNotifications',
   'VoiceUsersCounter',
-  'MemberCount',
-  'StatusEverywhere',
   'UnreadCountBadges',
-  'CharCounter',
-  'PinStuff'
+  'PinStuff',
+  'ShowSessions'
 ];
 
 export const themes = [
