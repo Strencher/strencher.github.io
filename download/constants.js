@@ -31,7 +31,7 @@ export const plugins = [
   'StatusEverywhere',
   'UnreadCountBadges',
   'CharCounter',
-  'PinDirectMessages'
+  'PinStuff'
 ];
 
 export const themes = [
