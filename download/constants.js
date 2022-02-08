@@ -7,6 +7,8 @@ export const plugins = [
   'AutoCorrectV2',
   'BetterBannedUsers',
   'BetterQuoter',
+  'ChannelDetails',
+  'ChannelDms',
   'CharCounter',
   'Copier',
   'InvisibleTyping',
@@ -23,16 +25,17 @@ export const plugins = [
   'QuickMuteChannels',
   'RelationshipCounter',
   'ShowAllActivities',
+  'ShowSessions',
   'ShutUpClyde',
   'StatusEverywhere',
   'SuppressReplyMentions',
   'TwitchChatV2',
+  'TypingUsersPlus',
+  'UnreadCountBadges',
+  'UserBackgrounds',
   'UserDetails',
   'VoiceChatNotifications',
   'VoiceUsersCounter',
-  'UnreadCountBadges',
-  'PinStuff',
-  'ShowSessions'
 ];
 
 export const themes = [
