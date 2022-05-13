@@ -1,7 +1,7 @@
 import FormattableString from './string.js'
 
-export const pluginLink = new FormattableString('https://raw.githubusercontent.com/Strencher/BetterDiscordStuff/master/{{name}}/{{name}}.plugin.js');
-export const themeLink = new FormattableString('https://raw.githubusercontent.com/Strencher/BetterDiscordStuff/master/Themes/{{name}}/{{name}}.theme.css');
+export const pluginLink = new FormattableString('https://raw.githubusercontent.com/Strencher/BetterDiscordStuff/master/{{name}}/{{filename}}.plugin.js');
+export const themeLink = new FormattableString('https://raw.githubusercontent.com/Strencher/BetterDiscordStuff/master/Themes/{{name}}/{{filename}}.theme.css');
 
 export const plugins = [
   'AutoCorrectV2',
